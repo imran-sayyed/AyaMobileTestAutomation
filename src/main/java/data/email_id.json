@@ -1,0 +1,182 @@
+{
+	"emailData": [
+			{
+			"testCase": "Update Email ID",
+			"emailId": "sku1@bankas.in",
+			"emailErrorMessage": "The email provided is already registered with us. Please provide alternate email.",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Update Email ID",
+			"emailId": "shaadiautomationuser4@gmail.com",
+			"emailErrorMessage": "The email provided is already registered with us. Please provide alternate email.",
+			"password": "test",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "shaadi_s03bankas.in",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "#@%^#$@#$@#.com",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "~!@#$%^&*()_+{}|:<>?`-=[];',./'@bankas.in",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "@domain.com",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "Joe Smith <email@domain.com>",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "email.domain.com",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "email@domain@domain.com",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": ".email@domain.com",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "email.@domain.com",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "email..email@domain.com",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "email@domain.com(Joe Smith)",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "email@domain",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "email@-domain",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "email@111.222.333.44444",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "email@domain..com",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailId": "email@domain.web",
+			"emailErrorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com",
+			"password": "",
+			"passwordErrorMessage": "",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Update Email ID",
+			"emailId": "musk123@gmail.com",
+			"emailErrorMessage": "",
+			"password": "t",
+			"passwordErrorMessage": "Please enter a valid password",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Update Email ID",
+			"emailId": "musk123@gmail.com",
+			"emailErrorMessage": "",
+			"password": "te",
+			"passwordErrorMessage": "Please enter a valid password",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Update Email ID",
+			"emailId": "musk123@gmail.com",
+			"emailErrorMessage": "",
+			"password": "tes",
+			"passwordErrorMessage": "Please enter a valid password",
+			"forgotPassword": false
+		},
+		{
+			"testCase": "Update Email ID",
+			"emailId": "musk123@gmail.com",
+			"emailErrorMessage": "",
+			"password": "",
+			"passwordErrorMessage": "Please enter a valid password",
+			"forgotPassword": true
+		}
+	]
+}

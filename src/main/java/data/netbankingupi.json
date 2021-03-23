@@ -1,0 +1,73 @@
+{
+	"ppData": [
+		{
+			"testCase": "Verity Valid UPI Address",
+			"testCaseNumber": "31",
+			"paymentPlans": "D+",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [
+				{
+					"cardType": "UPI",
+					"upiName": "test@okhdfcbank",
+					"upiErrorMessage": "",
+					"isUPIIntent": false
+				}
+			]
+		},
+		{
+			"testCase": "Input Invalid UPI Address and verify error messages",
+			"testCaseNumber": "32",
+			"paymentPlans": "S",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [
+				{
+					"cardType": "UPI",
+					"upiName": "t#$%^^%$$%#$",
+					"upiErrorMessage": "Enter valid UPI address",
+					"isUPIIntent": false
+				}
+			]
+		},
+		{
+			"testCase": "Net banking Invalid Case[Gold Plan]",
+			"testCaseNumber": "28",
+			"paymentPlans": "G",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [
+				{
+					"cardType": "Net Banking",
+					"bankName": "",
+					"netbankingMessage": "Please select preferred bank"
+				}
+			]
+		},
+		{
+			"testCase": "Visit HDFC Net banking page and cancel the transaction",
+			"testCaseNumber": "25",
+			"paymentPlans": "S",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [
+				{
+					"cardType": "Net Banking",
+					"bankName": "hdfc"
+				}
+			]
+		}
+	]
+}

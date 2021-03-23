@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Dashboard">
+	<parameter name="pod" value="matchmaking"></parameter>
+	<parameter name="RunEnvironment" value="iOSLocal"></parameter>
+
+	
+ 	<test name="AccountSetting_Alert_Testand_VerificationBadge_IOS_Premium">
+		<parameter name="userType" value="premium1" />
+		<classes>
+			<class name="page.test.Alert_and_VerificationbadgeTest" />
+		</classes>
+	</test> 
+  
+
+ 	<!-- <test name="ContactFilters_IOS_Free">
+		<parameter name="userType" value="free2" />
+		<classes>
+			<class name="page.test.ContactFiltersTest" />
+		</classes>
+	</test>  -->
+
+
+	 <test name="Dashboard_Shortlist_ConnectAnd_Ignore_IOS_Premium">
+		<parameter name="userType" value="premium1" />
+		<classes>
+			<class name="page.test.Dashboard_Shortlist_Connect_ignore_test" />
+		</classes>
+	</test>
+	
+	
+
+<!-- 	<test name="SaveDraft_AccountSettings_IOS">
+		<parameter name="userType" value="premium1" />
+		<classes>
+			<class name="page.test.DraftSettingsTest" />
+		</classes>
+	</test>
+ -->
+
+
+	<!-- <test name="Hide_Delete_IOS">
+		<parameter name="userType" value="premium1" />
+		<classes>
+			<class name="page.test.Hide_Delete_test" />
+		</classes>
+	</test>
+ -->
+	<!-- <test name="PartnerPreference_IOS">
+		<parameter name="userType" value="free2" />
+		<classes>
+			<class name="page.test.PartnerPreferenceTest" />
+		</classes>
+	</test> -->
+
+	
+
+	<!-- Test -->
+</suite> <!-- Suite -->

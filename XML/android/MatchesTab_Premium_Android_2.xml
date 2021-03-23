@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Matches_Premium2">
+	<parameter name="pod" value="matchmaking"></parameter>
+	<parameter name="RunEnvironment" value="androidLocal"></parameter>
+
+	<test name="More_Matches_premium_Android">
+		<parameter name="userType" value="premium3" />
+		<classes>
+			<class name="page.test.MoreMatchesTest" />
+		</classes>
+	</test>
+
+	<test name="DailyRecommendations_Test_Premium_Android">
+		<parameter name="userType" value="premium3" />
+		<classes>
+			<class name="page.test.DailyRecommendationsAndroidTest" />
+		</classes>
+	</test>
+
+
+	<test name="AdvanceSearch_Premium_Android">
+		<parameter name="userType" value="premium3" />
+		<classes>
+			<class name="page.test.AdvanceSearchTest" />
+		</classes>
+	</test>
+
+	<test name="RecentlyViewedTest_premium_Android">
+		<parameter name="userType" value="premium3" />
+		<classes>
+			<class name="page.test.RecentlyViewedTest" />
+		</classes>
+	</test>
+
+
+	<!-- <test name="UploadPhotoCard"> <parameter name="userType" value="free2" 
+		/> <classes> <class name="page.test.UploadPhotoCardTest" /> </classes> </test> -->
+
+
+	<!-- Test -->
+</suite> <!-- Suite -->

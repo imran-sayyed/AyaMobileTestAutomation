@@ -1,0 +1,25 @@
+{
+  "searchSet": [
+    {
+      "testCase": "User Performing Basic Search",
+      "maritalStatus": ["Never Married"],
+      "haveChildren": ["Doesn't Matter"],
+      "religion": ["Hindu","Muslim"],
+      "motherTongue": ["Hindi"],
+      "community": ["Adi Andhra","Adi Dravida"],
+      "country": ["India"],
+      "state": ["Assam","Andhra Pradesh"],
+      "city": ["Anantapur","Chittoor"],
+      "Manglik": ["Only Mangliks"],
+      "PhotoSettings": ["Visible to all"],
+      "countryGrewUpIn": ["India"],
+      "education": ["Master"],
+      "educationArea": ["Science"],
+      "workingWith": ["Private Company"],
+      "ProfessionArea": ["Open to all"],
+      "BodyType": ["Slim"],
+      "SkinTone": ["Fair"],
+      "diet":["Non-Veg"]
+      
+    }
+  ]}

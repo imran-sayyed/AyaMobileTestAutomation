@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Monetization">
+	<parameter name="pod" value="payment"></parameter>
+	<parameter name="RunEnvironment" value="iOSLocal"></parameter>
+
+	<test name="PaymetPageTest_IOS">
+		<parameter name="userType" value="free2" />
+		<classes>
+			<class name="page.test.PaymentPageTest"></class>
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!-- Suite -->

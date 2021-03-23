@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MISC">
+	<parameter name="pod" value="matchmaking"></parameter>
+	<parameter name="RunEnvironment" value="iOSLocal"></parameter>
+
+	 <test name="SendConectFromListingTest_iOS_Premium">
+		<parameter name="userType" value="premium1" />
+		<classes>
+			<class name="page.test.SendConectFromListingTest" />
+		</classes>
+	</test> 
+	 
+	 <test name="SendConectFromListingTest_iOS_Free">
+		<parameter name="userType" value="free2" />
+		<classes>
+			<class name="page.test.SendConectFromListingTest" />
+		</classes>
+	</test>  
+		
+
+        <!-- comment -->
+
+	<!-- Test -->
+</suite> <!-- Suite -->

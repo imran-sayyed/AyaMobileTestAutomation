@@ -1,0 +1,92 @@
+{
+"dataSet": 
+[
+{
+"testCase": "User should be logged into the Application and Logout from Application",
+"username": "inboxpremium@gmail.com",
+"password": "test",
+"headerMessage": "",
+"footerMessage": "",
+"isLogout": true
+},
+{
+"testCase": "User should be logged into the Application and Logout from Application",
+"username": "9970650303",
+"password": "test123",
+"headerMessage": "",
+"footerMessage": "",
+"isLogout": true
+},
+{
+"testCase": "Incorrect Mobile",
+"username": "56888",
+"password": "test",
+"headerMessage": "Invalid Mobile No.",
+"footerMessage": "Please enter valid mobile no.",
+"isLogout": false
+},
+{
+"testCase": "Multiple profiles with mobile number",
+"username": "9769247151",
+"password": "test",
+"footerMessage": "This Mobile No. has been used for multiple Profiles. Enter your Email ID to login",
+"headerMessage": "Multiple profiles",
+"isLogout": false
+},
+{
+"testCase": "Unregistered mobile number",
+"username": "99706503039",
+"password": "test",
+"headerMessage": "Not found",
+"footerMessage": "This Mobile No. is not registered with us",
+"isLogout": false
+},
+{
+"testCase": "Not Verified mobile number",
+"username": "9784546648",
+"password": "test",
+"headerMessage": "Mobile not verified",
+"footerMessage": "This Mobile No. has not been verified. Try Login with Email ID",
+"isLogout": false
+},
+{
+"testCase": "Incorrect Email",
+"username": "test@",
+"password": "test",
+"headerMessage": "Invalid Email ID",
+"footerMessage": "Please enter correct Email ID",
+"isLogout": false
+},
+{
+"testCase": "Email not Registered",
+"username": "helloworldtestingprofile@gmail.com",
+"password": "test",
+"headerMessage": "Not found",
+"footerMessage": "This Email ID is not registered with us",
+"isLogout": false
+},
+{
+"testCase": "Blank Email and Password",
+"username": "",
+"password": "",
+"headerMessage": "Invalid",
+"footerMessage": "Please enter valid Mobile No. / Email ID",
+"isLogout": false
+},
+{
+"testCase": "Incorrect email message",
+"username": "",
+"password": "test123",
+"headerMessage": "Invalid",
+"footerMessage": "Please enter valid Mobile No. / Email ID",
+"isLogout": false
+},
+{
+"testCase": "Deactivated profile",
+"username": "devi@dhairya.in",
+"password": "test",
+"headerMessage": "Oops!",
+"footerMessage": "Your membership on Shaadi.com has been deactivated. For furthur details, please contact our Customer Relations.",
+"isLogout": false
+}]
+}

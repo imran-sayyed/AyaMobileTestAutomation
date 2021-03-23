@@ -1,0 +1,45 @@
+{  
+   "RegData":[  
+      {  
+         "TestCase":"User should be logged into the Application",
+         "userName": "nishus3_cug_b@bankas.in",
+         "postedBy": "Self",
+         "password": "test",
+         "firstName": "Nisha",
+         "lastName": "S",
+         "gender": "2",
+         "day": "18",
+         "month": "Oct",
+         "year": "1986",
+         "religion": "Hindu",
+         "motherTongue": "Hindi",
+         "livingIn": "India",
+         "stateLivingIn": "",
+         "cityLivingIn": "",
+         "maritialStatus": "",
+         "children" : "Yes. Living together",
+         "noOfChildren" : "2",
+         "commumity" : "Brahmin",
+         "subcommunity" : "",
+         "noCasteBar" : "True",
+         "gotra" : "",
+         "nakshatra" : "",
+         "eductionLevel" : "Masters",
+         "educationField" : "Arts",
+         "firstCollege" : "Model College",
+         "secondCollege" : "",
+         "workingWith" : "Private Company",
+         "workingAs" : "Admin Professional",
+         "annualIncome" : "INR 7 Lakh to 10 Lakh",
+         "diet" : "Occasionally Non-Veg",
+         "smoke" : "No",
+         "drnik" : "Yes",
+         "height" : "5ft 4in - 162cm",
+         "bodyType" : "Athletic",
+         "complexion" : "Wheatish",
+         "contactNumber" : "9666667777"
+         }        
+      
+   ]
+}
+

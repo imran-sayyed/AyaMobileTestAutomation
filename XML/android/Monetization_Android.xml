@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Monetization">
+	<parameter name="pod" value="payment"></parameter>
+	<parameter name="RunEnvironment" value="androidLocal"></parameter>
+
+	<test name="DebitCredit_Android">
+		<parameter name="userType" value="free1" />
+		<classes>
+			<class name="page.test.DebitCreditTest"></class>
+		</classes>
+	</test>
+	<test name="Netbanking_UPI_Android">
+		<parameter name="userType" value="free1" />
+		<classes>
+			<class name="page.test.NetbankingUPITest" />
+		</classes>
+	</test>
+	<!-- <test name="PayCashCentre"> <parameter name="userType" value="free2" 
+		/> <classes> <class name="page.test.PayCashCentreTest" /> </classes> </test> -->
+	<test name="PaymetPage1Test_Android">
+		<parameter name="userType" value="free1" />
+		<classes>
+			<class name="page.test.PaymentPageTest"></class>
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,90 @@
+{
+	"ppData": [{
+			"testCase": "Input Valid Credit Card Details",
+			"testCaseNumber": "14",
+			"paymentPlans": "G+",
+			"profileBooster": false,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "5559366620136985",
+				"cardHoldersName": "Rajeev",
+				"expDate": "05/2022",
+				"cvv": "555",
+				"totalAmount": "?2750",
+				"cardNumberMessage": "",
+				"cardHoldersNameMessage": "",
+				"cvvMessage": "",
+				"expiryMessage": ""
+			}]
+		},
+		{
+			"testCase": "Input Valid Debit Card Details",
+			"testCaseNumber": "24",
+			"paymentPlans": "P+",
+			"profileBooster": false,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "5559366620136985",
+				"cardHoldersName": "Test Test",
+				"expDate": "05/2022",
+				"cvv": "555",
+				"totalAmount": "?2750",
+				"cardNumberMessage": "",
+				"cardHoldersNameMessage": "",
+				"cvvMessage": "",
+				"expiryMessage": ""
+			}]
+		},
+		{
+			"testCase": "Keep all Credit Card details blank and verify error message",
+			"testCaseNumber": "6",
+			"paymentPlans": "P+",
+			"profileBooster": false,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "Keep all Debit Card details blank and verify error message",
+			"testCaseNumber": "10",
+			"paymentPlans": "D",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		}]
+}

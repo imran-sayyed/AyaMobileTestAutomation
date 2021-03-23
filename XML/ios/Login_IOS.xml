@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Login">
+	<parameter name="pod" value="acquisition"></parameter>
+	<parameter name="RunEnvironment" value="iOSLocal"></parameter>
+
+	 <parameter name="userType" value="NA" />
+	<test name="Login_IOS">
+		<classes>
+			<class name="page.test.LoginTest" />
+		</classes>
+	</test>
+	<test name="Login_OTP_Test_IOS">
+		<classes>
+			<class name="page.test.OTPLoginTest" />
+		</classes>
+	</test>
+	<test name="ForgotPassword_IOS">
+		<classes>
+			<class name="page.test.ForgotPswdTest" />
+		</classes>
+	</test>
+
+
+
+</suite>

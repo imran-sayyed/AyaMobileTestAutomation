@@ -1,0 +1,94 @@
+{
+"dataSet": 
+[
+{
+"testCase": "Incorrect Mobile",
+"username": "56888",
+"password": "test",
+"headerMessage": "Invalid Mobile No.",
+"emailErrorMessage": "Incorrect mobile no. Please enter valid mobile no.",
+"passwordErrorMessage": "",
+"isLogout": false
+},
+{
+"testCase": "Multiple profiles with mobile number",
+"username": "9769247151",
+"password": "test",
+"headerMessage": "This no. is already in use",
+"emailErrorMessage": "This Mobile no. has been used for multiple Profiles. Please login using Email ID",
+"passwordErrorMessage": "",
+"isLogout": false
+},
+{
+"testCase": "Unregistered mobile number",
+"username": "99706503039",
+"password": "test",
+"headerMessage": "Mobile no. not registered",
+"emailErrorMessage": "This Mobile no. is not registered with us",
+"passwordErrorMessage": "",
+"isLogout": false
+},
+{
+"testCase": "Multiple profiles with mobile number",
+"username": "9769247151",
+"password": "test",
+"headerMessage": "This no. is already in use",
+"emailErrorMessage": "This Mobile no. has been used for multiple Profiles. Please login using Email ID",
+"passwordErrorMessage": "",
+"isLogout": false
+},
+{
+"testCase": "Incorrect Email",
+"username": "test@",
+"password": "test",
+"headerMessage": "Invalid Email ID",
+"emailErrorMessage": "Enter correct email ID. Example - username@example.com",
+"passwordErrorMessage": "",
+"isLogout": false
+},
+{
+"testCase": "Email not Registered",
+"username": "helloworldtestingprofile@gmail.com",
+"password": "test",
+"headerMessage": "Email ID not registered",
+"emailErrorMessage": "This Email ID is not registered with us",
+"passwordErrorMessage": "",
+"isLogout": false
+},
+{
+"testCase": "Blank Email and Password",
+"username": "",
+"password": "",
+"headerMessage": "No details entered",
+"emailErrorMessage": "Enter Email ID or Mobile No.",
+"passwordErrorMessage": "Enter Password",
+"isLogout": false
+},
+{
+"testCase": "Incorrect password message",
+"username": "premium_male@200mails.com",
+"password": "test123",
+"headerMessage": "Incorrect Password",
+"emailErrorMessage": "",
+"passwordErrorMessage": "Please enter a valid password",
+"isLogout": false
+},
+{
+"testCase": "Email not present",
+"username": "",
+"password": "test123",
+"headerMessage": "No details entered",
+"emailErrorMessage": "Enter Email ID or Mobile No.",
+"passwordErrorMessage": "",
+"isLogout": false
+},{
+"testCase": "User should be logged into the Application and Logout from Application - Email",
+"username": "premium_male@200mails.com",
+"password": "test",
+"headerMessage": "",
+"emailErrorMessage": "",
+"passwordErrorMessage": "",
+"isLogout": true
+}]
+
+}

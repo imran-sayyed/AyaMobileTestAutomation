@@ -1,0 +1,44 @@
+{  
+   "Reg1Data":[  
+      {  
+         "TestCase":"User should be logged into the Application",
+         "userName": "test@200mails.com",
+         "postedBy": "Self",
+         "password": "test123",
+         "firstName": "Nisha",
+         "lastName": "S",
+         "gender": "Female",
+         "day": "08",
+         "month": "Oct",
+         "year": "1983",
+         "religion": "Hindu",
+         "motherTongue": "Hindi",
+         "livingIn": "India",
+         "stateLivingIn": "Maharashtra",
+         "cityLivingIn": "Pune",
+         "maritialStatus": "Divorced",
+         "children" : "Yes. Living together",
+         "noOfChildren" : "2",
+         "commumity" : "Baniya",
+         "subcommunity" : "Adi Andhra",
+         "noCasteBar" : "True",
+         "gotra" : "",
+         "nakshatra" : "",
+         "eductionLevel" : "Master",
+         "educationField" : "Arts",
+         "firstCollege" : "Model College",
+         "secondCollege" : "",
+         "workingWith" : "Private Company",
+         "workingAs" : "Admin Professional",
+         "annualIncome" : "INR 7 Lakh to 10 Lakh",
+         "diet" : "Occasionally Non-Veg",
+         "smoke" : "No",
+         "drnik" : "Yes",
+         "height" : "5ft 4in - 162cm",
+         "bodyType" : "Athletic",
+         "complexion" : "Wheatish",
+         "contactNumber" : "8169769970"
+         }
+   ]
+}
+

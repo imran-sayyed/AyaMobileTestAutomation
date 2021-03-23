@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Chat">
+	<parameter name="pod" value="matchmaking"></parameter>
+	<parameter name="RunEnvironment" value="iOSLocal"></parameter>
+	
+	<test name="ChatTestFree_IOS">
+		<parameter name="userType" value="free1" />
+		<classes>
+			<class name="page.test.ChatWindowTest" />
+		</classes>
+	</test>
+	
+	<test name="ChatTestPremium_IOS">
+		<parameter name="userType" value="premium1" />
+		<classes>
+			<class name="page.test.ChatWindowTest" />
+		</classes>
+	</test>
+
+	<!-- Test -->
+</suite> <!-- Suite -->

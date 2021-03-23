@@ -1,0 +1,795 @@
+{
+	"paymentData": [{
+			"testCase": "Verify if all the fields are blank in Credit Card and click on Next",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Card Number are blank.",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "4242424242424242",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Card Name are blank.",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "Rohan Sawant",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except CVV are blank.",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "??450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "??20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "567",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Expiry Date are blank.",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "02/2020",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": ""
+			}]
+		},
+		{
+			"testCase": "Verify if all the fields are blank and click on Next",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Card Number are blank.",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "4242424242424242",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Card Name are blank.",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "Rohan Sawant",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except CVV are blank.",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "??450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "??20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "567",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Expiry Date are blank.",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "02/2020",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": ""
+			}]
+		},
+		{
+			"testCase": "Visit HDFC Net banking page and cancel the transaction",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Net Banking",
+				"bankName": "hdfc"
+			}]
+		},
+		{
+			"testCase": "Visit Bank of Maharashtra Net banking page and cancel the transaction",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Net Banking",
+				"bankName": "Bank of Maharashtra"
+			}]
+		},
+		{
+			"testCase": "Verify UPI Address",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "UPI",
+				"upiName": "pappu",
+				"upiErrorMessage": "Enter valid UPI address"
+			}]
+		},
+		{
+			"testCase": "Verify UPI Address",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "UPI",
+				"upiName": "test@okhdfcbank",
+				"upiErrorMessage": ""
+			}]
+		},
+		{
+			"testCase": "Verify if all the fields are blank in Credit Card and click on Next",
+			"paymentPlans": "Gold",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Card Number are blank.",
+			"paymentPlans": "Gold",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "4242424242424242",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Card Name are blank.",
+			"paymentPlans": "Gold",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "Rohan Sawant",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except CVV are blank.",
+			"paymentPlans": "Gold",
+			"profileBooster": true,
+			"profileBoosterValue": "??450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "??20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "567",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Expiry Date are blank.",
+			"paymentPlans": "Gold",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "02/2020",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": ""
+			}]
+		},
+		{
+			"testCase": "Verify if all the fields are blank and click on Next",
+			"paymentPlans": "Gold",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Card Number are blank.",
+			"paymentPlans": "Gold",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "4242424242424242",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Card Name are blank.",
+			"paymentPlans": "Gold",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "Rohan Sawant",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except CVV are blank.",
+			"paymentPlans": "Gold",
+			"profileBooster": true,
+			"profileBoosterValue": "??450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "??20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "567",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Expiry Date are blank.",
+			"paymentPlans": "Gold",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "02/2020",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": ""
+			}]
+		},
+		{
+			"testCase": "Visit HDFC Net banking page and cancel the transaction",
+			"paymentPlans": "Gold",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Net Banking",
+				"bankName": "hdfc"
+			}]
+		},
+		{
+			"testCase": "Visit Bank of Maharashtra Net banking page and cancel the transaction",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Net Banking",
+				"bankName": "Bank of Maharashtra"
+			}]
+		},
+		{
+			"testCase": "Verify UPI Address",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "UPI",
+				"upiName": "pappu",
+				"upiErrorMessage": "Enter valid UPI address"
+			}]
+		},
+		{
+			"testCase": "Verify UPI Address",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "UPI",
+				"upiName": "test@okhdfcbank",
+				"upiErrorMessage": ""
+			}]
+		},
+		{
+			"testCase": "Verify if all the fields are blank in Credit Card and click on Next",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Card Number are blank.",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "4242424242424242",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Card Name are blank.",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "Rohan Sawant",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except CVV are blank.",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "??450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "??20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "567",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Expiry Date are blank.",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Credit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "02/2020",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": ""
+			}]
+		},
+		{
+			"testCase": "Verify if all the fields are blank and click on Next",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Card Number are blank.",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "4242424242424242",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Card Name are blank.",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "Rohan Sawant",
+				"expDate": "",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except CVV are blank.",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "??450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "??20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "",
+				"cvv": "567",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "",
+				"expiryMessage": "Please select valid Expiry Date"
+			}]
+		},
+		{
+			"testCase": "To verify validation messages are displayed if all the fields except Expiry Date are blank.",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Debit Card",
+				"cardNumber": "",
+				"cardHoldersName": "",
+				"expDate": "02/2020",
+				"cvv": "",
+				"totalAmount": "",
+				"cardNumberMessage": "Please enter a valid Card Number",
+				"cardHoldersNameMessage": "Please enter Name of the Card Holder",
+				"cvvMessage": "Invalid CVV",
+				"expiryMessage": ""
+			}]
+		},
+		{
+			"testCase": "Visit HDFC Net banking page and cancel the transaction",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Net Banking",
+				"bankName": "hdfc"
+			}]
+		},
+		{
+			"testCase": "Visit Bank of Maharashtra Net banking page and cancel the transaction",
+			"paymentPlans": "Diamond",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Net Banking",
+				"bankName": "Bank of Maharashtra"
+			}]
+		},
+		{
+			"testCase": "Verify UPI Address",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "UPI",
+				"upiName": "pappu",
+				"upiErrorMessage": "Enter valid UPI address"
+			}]
+		},
+		{
+			"testCase": "Verify UPI Address",
+			"paymentPlans": "Silver",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "UPI",
+				"upiName": "test@okhdfcbank",
+				"upiErrorMessage": ""
+			}]
+		}
+	]
+}

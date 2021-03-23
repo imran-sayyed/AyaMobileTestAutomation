@@ -1,0 +1,194 @@
+{
+    "paymentData": [{
+            
+            "testCase": "To verify Credit Card fields",
+            "paymentPlans": "Silver",
+            "planMonthlyAmount": "2,450",
+            "profileBooster": true,
+            "orderSummary": "Silver (1 Month)",
+            "profileBoosterValue": "450",
+            "contributeToShaadiCares": true,
+            "contributeToShaadiCaresValue": "20",
+            "totalAmount": "2,920",
+            "paymentType": [{
+                "cardType": "Credit Card",
+                "cardNumber": "4242424242424242",
+                "cardHoldersName": "Rohan Sawant",
+                "expDate": "02/2020",
+                "cvv": "567",
+                "totalAmount": "",
+                "cardNumberMessage": "",
+                "cardHoldersNameMessage": "",	
+                "cvvMessage": "",
+                "expiryMessage": ""
+            }]
+        },
+        
+            {
+            "testCase": "To verify Debit Card fields",
+            "paymentPlans": "Silver",
+            "planMonthlyAmount": "2,450",
+            "orderSummary": "Silver (1 Month)",
+            "profileBooster": true,
+            "profileBoosterValue": "450",
+            "contributeToShaadiCares": true,
+            "contributeToShaadiCaresValue": "20",
+            "totalAmount": "2,920",
+            "paymentType": [{
+                "cardType": "Debit Card",
+                "cardNumber": "4242424242424242",
+                "cardHoldersName": "Rohan Sawant",
+                "expDate": "02/2020",
+                "cvv": "567",
+                "totalAmount": "",
+                "cardNumberMessage": "",
+                "cardHoldersNameMessage": "",
+                "cvvMessage": "",
+                "expiryMessage": ""
+            }]
+        },
+                 {
+            "testCase": "Visit HDFC Net banking page and cancel the transaction",
+            "paymentPlans": "Silver",
+            "planMonthlyAmount": "2,450",
+            "orderSummary": "Silver (1 Month)",
+            "profileBooster": true,
+            "profileBoosterValue": "450",
+            "contributeToShaadiCares": true,
+            "contributeToShaadiCaresValue": "20",
+            "totalAmount": "2,920",
+            "paymentType": [{
+                "cardType": "Net Banking",
+                "bankName": "hdfc"
+            }]
+        },
+        
+        {            
+            "testCase": "To verify Credit Card fields",
+            "paymentPlans": "Gold",
+            "planMonthlyAmount": "4,450",
+            "orderSummary": "Gold (3 Months)",
+            "profileBooster": true,
+            "profileBoosterValue": "1,100",
+            "contributeToShaadiCares": true,
+            "contributeToShaadiCaresValue": "20",
+            "totalAmount": "5,570",
+            "paymentType": [{
+                "cardType": "Credit Card",
+                "cardNumber": "4242424242424242",
+                "cardHoldersName": "Rohan Sawant",
+                "expDate": "02/2020",
+                "cvv": "567",
+                "totalAmount": "",
+                "cardNumberMessage": "",
+                "cardHoldersNameMessage": "",	
+                "cvvMessage": "",
+                "expiryMessage": ""
+            }]
+        },
+        
+            {
+            "testCase": "To verify Debit Card fields",
+            "paymentPlans": "Gold",
+            "planMonthlyAmount": "4,450",
+            "orderSummary": "Gold (3 Months)",
+            "profileBooster": true,
+            "profileBoosterValue": "1,100",
+            "contributeToShaadiCares": true,
+            "contributeToShaadiCaresValue": "20",
+            "totalAmount": "5,570",
+            "paymentType": [{
+                "cardType": "Debit Card",
+                "cardNumber": "4242424242424242",
+                "cardHoldersName": "Rohan Sawant",
+                "expDate": "02/2020",
+                "cvv": "567",
+                "totalAmount": "",
+                "cardNumberMessage": "",
+                "cardHoldersNameMessage": "",
+                "cvvMessage": "",
+                "expiryMessage": ""
+            }]
+        },
+                 {
+            "testCase": "Visit HDFC Net banking page and cancel the transaction",
+            "paymentPlans": "Gold",
+            "planMonthlyAmount": "4,450",
+            "orderSummary": "Gold (3 Months)",
+            "profileBooster": true,
+            "profileBoosterValue": "1,100",
+            "contributeToShaadiCares": true,
+            "contributeToShaadiCaresValue": "20",
+            "totalAmount": "5,570",
+            "paymentType": [{
+                "cardType": "Net Banking",
+                "bankName": "hdfc"
+            }]    
+        },
+        
+           {            
+            "testCase": "To verify Credit Card fields",
+            "paymentPlans": "Diamond",
+            "planMonthlyAmount": "6,550",
+            "orderSummary": "Diamond (6 Months)",
+            "profileBooster": true,
+            "profileBoosterValue": "2,100",
+            "contributeToShaadiCares": true,
+            "contributeToShaadiCaresValue": "20",
+            "totalAmount": "8,670",
+            "paymentType": [{
+                "cardType": "Credit Card",
+                "cardNumber": "4242424242424242",
+                "cardHoldersName": "Rohan Sawant",
+                "expDate": "02/2020",
+                "cvv": "567",
+                "totalAmount": "",
+                "cardNumberMessage": "",
+                "cardHoldersNameMessage": "",	
+                "cvvMessage": "",
+                "expiryMessage": ""
+            }]
+        },
+        
+            {
+            "testCase": "To verify Debit Card fields",
+            "paymentPlans": "Diamond",
+            "planMonthlyAmount": "6,550",
+            "orderSummary": "Diamond (6 Months)",
+            "profileBooster": true,
+            "profileBoosterValue": "2,100",
+            "contributeToShaadiCares": true,
+            "contributeToShaadiCaresValue": "20",
+            "totalAmount": "8,670",
+            "paymentType": [{
+                "cardType": "Debit Card",
+                "cardNumber": "4242424242424242",
+                "cardHoldersName": "Rohan Sawant",
+                "expDate": "02/2020",
+                "cvv": "567",
+                "totalAmount": "",
+                "cardNumberMessage": "",
+                "cardHoldersNameMessage": "",
+                "cvvMessage": "",
+                "expiryMessage": ""
+            }]
+        },
+                
+          {
+            "testCase": "Visit HDFC Net banking page and cancel the transaction",
+            "paymentPlans": "Diamond",
+            "planMonthlyAmount": "6,550",
+            "orderSummary": "Diamond (6 Months)",
+            "profileBooster": true,
+            "profileBoosterValue": "2,100",
+            "contributeToShaadiCares": true,
+            "contributeToShaadiCaresValue": "20",
+            "totalAmount": "8,670",
+            "paymentType": [{
+                "cardType": "Net Banking",
+                "bankName": "hdfc"
+            }]    
+          }
+        
+  ]
+}

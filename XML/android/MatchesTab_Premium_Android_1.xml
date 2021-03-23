@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Matches_Premium1">
+	<parameter name="pod" value="matchmaking"></parameter>
+	<parameter name="RunEnvironment" value="androidLocal"></parameter>
+
+
+
+	<test name="Shortlist Premium_Android">
+		<parameter name="userType" value="premium3" />
+		<classes>
+			<class name="page.test.ShortlistsTest" />
+		</classes>
+	</test>
+
+
+	<test name="MatchesProfilePage_Premium_Android">
+		<parameter name="userType" value="premium3" />
+		<classes>
+			<class name="page.test.MatchesProfilePageTest" />
+		</classes>
+	</test>
+
+
+	<test name="MatchesListingPage_Premium_Android">
+		<parameter name="userType" value="premium3" />
+		<classes>
+			<class name="page.test.MatchesListingTest" />
+		</classes>
+	</test>
+
+
+
+
+	<!-- Test -->
+</suite> <!-- Suite -->

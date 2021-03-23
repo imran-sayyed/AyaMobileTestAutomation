@@ -1,0 +1,111 @@
+{
+	"ppData": [{
+			"testCase": "Input Payment at Bank and Visit Thank You Page",
+			"testCaseNumber": "41",
+			"paymentPlans": "P+",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Payment at Bank",
+				"name": "Amaan Memon",
+				"contactNumber": "9970650303",
+				"thankMessage": "Your order has been placed",
+				"nameMessage": ""
+			}]
+		},
+		{
+			"testCase": "Input Shaadi Centre Details and click Place Order",
+			"testCaseNumber": "44",
+			"paymentPlans": "G+",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Shaadi.com Centre",
+				"city": "Bhopal",
+				"thankMessage": "Your order has been placed",
+				"errorMessage": ""
+			}]
+		},
+		{
+			"testCase": "Input Invalid Shaadi Centre Details and verify error message",
+			"testCaseNumber": "45",
+			"paymentPlans": "P+",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Shaadi.com Centre",
+				"city": "",
+				"thankMessage": "",
+				"errorMessage": "Please select valid City."
+			}]
+		}, 
+		{
+			"testCase": "Input Cash Pickup details and Verify Thank You Page[Gold Plus]",
+			"testCaseNumber": "35",
+			"paymentPlans": "G+",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Cash Pickup (Estimated pickup time : 24hrs to 48 hrs)",
+				"name": "Amaan Memon",
+				"contactNumber": "9970650303",
+				"city": "Mumbai",
+				"address": "B-003, Shalimar Apartment, Near Z.B College, Soparagaon, Nallasopara(west)",
+				"nameMessage": "",
+				"cityMessage": "",
+				"addressMessage": ""
+			}]
+		},
+		{
+			"testCase": "Input Invalid Cash Pickup details[Silver]",
+			"testCaseNumber": "37",
+			"paymentPlans": "S",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Cash Pickup (Estimated pickup time : 24hrs to 48 hrs)",
+				"name": "",
+				"contactNumber": "",
+				"city": "",
+				"address": "",
+				"nameMessage": "Please enter Name.",
+				"cityMessage": "Please select a valid City.",
+				"addressMessage": "Please enter a valid Address.(Minimum 10 characters)"
+			}]
+		},
+		{
+			"testCase": "Input Invalid Details Cash Pickup[Diamond]",
+			"testCaseNumber": "39",
+			"paymentPlans": "D",
+			"profileBooster": true,
+			"profileBoosterValue": "?450",
+			"contributeToShaadiCares": true,
+			"contributeToShaadiCaresValue": "?20",
+			"totalAmount": "?2,920",
+			"paymentType": [{
+				"cardType": "Cash Pickup (Estimated pickup time : 24hrs to 48 hrs)",
+				"name": "23434545#$%^&&^%%",
+				"contactNumber": "",
+				"city": "",
+				"address": "12r5t/*",
+				"nameMessage": "Please enter valid Name.",
+				"cityMessage": "Please select a valid City.",
+				"addressMessage": "Please enter a valid Address.(Minimum 10 characters)"
+			}]
+		}]
+}

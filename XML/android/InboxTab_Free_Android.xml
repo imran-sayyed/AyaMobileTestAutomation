@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Inbox_Free">
+	<parameter name="pod" value="matchmaking"></parameter>
+	<parameter name="RunEnvironment" value="androidLocal"></parameter>
+
+	<test name="Inbox_Accepted_Free_Android">
+		<parameter name="userType" value="free1" />
+		<classes>
+			<class name="page.test.AcceptedTest" />
+		</classes>
+	</test>
+
+	<test name="Inbox_Sent_Free_Android">
+		<parameter name="userType" value="free1" />
+		<classes>
+			<class name="page.test.SentTest" />
+		</classes>
+	</test>
+
+
+	<test name="Inbox_Deleted_free_Android">
+		<parameter name="userType" value="free1" />
+		<classes>
+			<class name="page.test.DeletedTest_New" />
+		</classes>
+	</test>
+
+
+	<test name="Inbox Received_Free_Android">
+		<parameter name="userType" value="free1" />
+		<classes>
+			<class name="page.test.InboxReceivedTest_Android" />
+		</classes>
+	</test>
+
+
+
+	<!-- comment -->
+
+	<!-- Test comment -->
+</suite> <!-- Suite -->

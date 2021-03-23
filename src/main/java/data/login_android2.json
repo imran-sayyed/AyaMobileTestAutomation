@@ -1,0 +1,15 @@
+{
+"dataSet": 
+[
+{
+"testCase": "Incorrect Mobile",
+"username": "56888",
+"password": "test",
+"headerMessage": "Invalid Mobile No.",
+"emailErrorMessage": "Incorrect mobile no. Please enter valid mobile no.",
+"passwordErrorMessage": "",
+"isLogout": false
+}
+]
+
+}

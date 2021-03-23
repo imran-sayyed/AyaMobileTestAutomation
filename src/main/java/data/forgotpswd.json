@@ -1,0 +1,125 @@
+{
+	"forgotPswdData": [
+	{
+			"testCase": "Blank input",
+			"emailIDOrNbr": "",
+			"errorMessage": "Enter email id or phone number"
+		},
+		{
+			"testCase": "Unregistered Email ID",
+			"emailIDOrNbr": "mo2@yahoo.co.in",
+			"errorMessage": "This Email ID is not registered with us"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "shaadi_s03bankas.in",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"		
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "#@%^#$@#$@#.com",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "~!@#$%^&*()_+{}|:<>?`-=[];',./'@bankas.in",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "@domain.com",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "Joe Smith <email@domain.com>",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "email.domain.com",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "email@domain@domain.com",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": ".email@domain.com",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "email.@domain.com",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "ab..email@domain.com",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+			
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "email@gmail.com(JoeSmit)",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "email@domain",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "email@-domain.com",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "email@111.222.333.44444",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "email@domain..com",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Email ID",
+			"emailIDOrNbr": "email@domain.web",
+			"errorMessage": "Incorrect email address format. Please type a valid email address. Example username@example.com"
+		},
+		{
+			"testCase": "Incorrect Mobile Number",
+			"emailIDOrNbr": "0",
+			"errorMessage": "Incorrect mobile no. Please enter valid mobile no."
+		},
+		{
+			"testCase": "Incorrect Mobile Number",
+			"emailIDOrNbr": "0123456789012",
+			"errorMessage": "This Mobile No. is not registered with us"
+		},
+		{
+			"testCase": "Incorrect Mobile Number",
+			"emailIDOrNbr": "012345678901234",
+			"errorMessage": "This Mobile No. is not registered with us"
+		},
+		{
+			"testCase": "Unregistered Mobile Number",
+			"emailIDOrNbr": "4453599568",
+			"errorMessage": "This Mobile No. has not been verified. Try Login with Email ID"
+		},
+		{
+			"testCase": "Multiple profile with same Mobile Number",
+			"emailIDOrNbr": "8879521103",
+			"errorMessage": "This Mobile No. has been used for multiple Profiles. Enter your Email ID to login"
+		},
+		{
+			"testCase": "Valid data",
+			"emailIDOrNbr": "shaadiautomationuser2@gmail.com",
+			"errorMessage": ""
+		}				
+	]
+}
