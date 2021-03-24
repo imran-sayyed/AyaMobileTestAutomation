@@ -59,11 +59,11 @@ public class EmailUtils {
 
 		if (BaseTest.Url.equals("http://0.0.0.0:4723/wd/hub") || BaseTest.Url.equals("http://10.10.2.228:4724/wd/hub")
 				|| BaseTest.Url.equals("http://10.10.2.228:4725/wd/hub")) {
-			to = "sagar.kunder@peopleinteractive.in";
+			to = "sayyedimran.mohd@gmail.com";
 		} else {
 			to = BaseTest.AutomationReportMailUser;
 		}
-		String from = "shaadiphones@gmail.com";
+		String from = "senderemail_will come here";
 		Properties props = new Properties();
 		props.setProperty("mail.transport.protocol", "smtp");
 		props.setProperty("mail.host", "smtp.gmail.com");
@@ -76,7 +76,7 @@ public class EmailUtils {
 
 		Session session = Session.getInstance(props, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("shaadiphones@gmail.com", "shaadi2014");
+				return new PasswordAuthentication("emailfield", "P@ssWorDfield");
 			}
 		});
 		Message msg = new MimeMessage(session);

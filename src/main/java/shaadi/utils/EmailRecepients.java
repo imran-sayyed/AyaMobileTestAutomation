@@ -8,25 +8,25 @@ public class EmailRecepients {
 	public static List<String> mailID = new ArrayList<>();
 
 	
-	public static String saad_mail = "saad.k@peopleinteractive.in";
+	public static String saad_mail = "";
 	
-	public static String sagar_mail = "sagar.kunder@peopleinteractive.in";
+	public static String sagar_mail = "";
 	
-	public static String rahul_mail = "rahul.g@peopleinteractive.in";
+	public static String rahul_mail = "";
 	
-	public static String kalpit_mail = "kalpit.s@peopleinteractive.in";
+	public static String kalpit_mail = "";
 	
-	public static String yatin_mail = "yatin.m@peopleinteractive.in";
+	public static String yatin_mail = "";
 	
-	public static String imran_mail = "imran.sayyed@peopleinteractive.in";
+	public static String imran_mail = "sayyedimran.mohd@gmail.com";
 	
-	public static String yogi_mail = "yogendra.singh@peopleinteractive.in";
+	public static String yogi_mail = "";
 	
-	public static String panchasheela_mail = "panchsheela.k@peopleinteractive.in";
+	public static String panchasheela_mail = "";
 	
-	public static String purna_mail = "purna.t@peopleinteractive.in";
+	public static String purna_mail = "";
 
-	public static String prachi_mail = "prachi.walawalkar@peopleinteractive.in";
+	public static String prachi_mail = "";
 
 	
 	public static List<String> getMailIds(){

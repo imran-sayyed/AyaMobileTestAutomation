@@ -104,18 +104,18 @@ public class BaseTest {
 
 	}
 
-	@AfterSuite(alwaysRun = false)
-	public static void tearDown(ITestContext ctx) throws Exception {
-		try {
-
-			//EmailUtils.sendEmail(reportFoldername, ctx);
-
-		} catch (Exception ex) {
-
-			//System.out.println("Some issues while quitting the driver");
-
-		} 
-	}
+//	@AfterSuite(alwaysRun = false)
+//	public static void tearDown(ITestContext ctx) throws Exception {
+//		try {
+//
+//		EmailUtils.sendEmail(reportFoldername, ctx);
+//
+//		} catch (Exception ex) {
+//
+//			System.out.println("Some issues while quitting the driver");
+//
+//		} 
+//	}
 
 	@AfterTest(alwaysRun = true)
 	public static void tearDown() throws Exception {

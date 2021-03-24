@@ -57,7 +57,7 @@ public class UserProperty {
 	
 	public static final String appiumUrl="app.setUrl";
 	
-	public static final String automationReport="saad.k@peopleinteractive.in";
+	public static final String automationReport="email_recepient";
 	
 	public static final String automationName="UiAutomator2";
 	
