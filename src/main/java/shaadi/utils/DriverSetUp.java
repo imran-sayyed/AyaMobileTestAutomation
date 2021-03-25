@@ -47,8 +47,8 @@ public class DriverSetUp extends BaseTest {
 		capabilities.setCapability("platformVersion", platformVersion);
 		capabilities.setCapability("newCommandTimeout", 400);
 		capabilities.setCapability("appium-version", appiumVersion);
-		//capabilities.setCapability("noReset", false);
-		//capabilities.setCapability("fullReset", true);
+		capabilities.setCapability("noReset", false);
+		capabilities.setCapability("fullReset", true);
 		capabilities.setCapability("autoGrantPermissions", true);
 		capabilities.setCapability("app", app);
 		capabilities.setCapability("appPackage", AppStringConstants.ANDROIDAPPPACKAGE);

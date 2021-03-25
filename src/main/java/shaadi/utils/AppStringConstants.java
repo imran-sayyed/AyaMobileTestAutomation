@@ -2,9 +2,9 @@ package shaadi.utils;
 
 public class AppStringConstants {
 
-	public static final String PCLOUDYUSERNAME = "tech@shaadi.com";
+	public static final String PCLOUDYUSERNAME = "";
 
-	public static final String PCLOUDYAPIKEY = "9k4t2h7t28w9gb357cz8wggm";
+	public static final String PCLOUDYAPIKEY = "";
 
 	public static final String underAgeMaleYear = "2000";
 
@@ -110,11 +110,11 @@ public class AppStringConstants {
 
 	public static final String NoProfilesMsgShortlistAndroid = "You have no more Matches in this section";
 
-	public static final String ANDROIDAPPACTIVITY = "com.shaadi.android.ui.splash.SplashScreenActivity";
+	public static final String ANDROIDAPPACTIVITY = "com.novahsa.MainActivity";
 
-	public static final String ANDROIDAPPPACKAGE = "com.shaadi.android";
+	public static final String ANDROIDAPPPACKAGE = "com.novahsa.phat";
 
-	public static final String googleSignInEmail = "shaadiphones@gmail.com";
+	public static final String googleSignInEmail = "email";
 
 	public static final String chatWindowWarningElement = "//XCUIElementTypeStaticText[@name=\"You can start using Shaadi Chat after your Profile has been screened by our Quality team. We will notify you by email as soon as this is done.\"]";
 

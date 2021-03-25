@@ -9,10 +9,10 @@ import io.appium.java_client.pagefactory.iOSFindBy;
 
 public class BottomMenuPageObjects extends BasePageActions {
 	
-	@AndroidFindBy(id = "com.shaadi.android:id/progress_bar")
+	@AndroidFindBy( accessibility = "com.shaadi.android:id/progress_bar")
 	public static WebElement ProgressBar;
 
-	@AndroidFindBy(id = "com.shaadi.android:id/design_bottom_sheet")
+	@AndroidFindBy(accessibility = "com.shaadi.android:id/design_bottom_sheet")
 	public WebElement AppRatingLayer;
 
 	@AndroidFindBy(id = "com.shaadi.android:id/layoutItsAMatch_btnDismiss")

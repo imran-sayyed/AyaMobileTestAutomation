@@ -91,7 +91,7 @@ public class BaseTest {
 		} else {
 			RunEnvironment = runenv;
 			if (RunEnvironment.equalsIgnoreCase("androidlocal")) {
-				AppProperties.setProperty(UserProperty.APP_BUILD_PATH, "app-phat-release.apk.apk");
+				AppProperties.setProperty(UserProperty.APP_BUILD_PATH, "app-phat-release.apk");
 			} else {
 				AppProperties.setProperty(UserProperty.APP_BUILD_PATH, "AyaiOSApp.ipa");
 			}

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import android.shaadi.BasePageActions;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import shaadi.utils.AppStringConstants;
@@ -43,7 +44,7 @@ public class LoginPageObjects extends BasePageActions {
 	public WebElement Allow_notifications;
 
 	@iOSFindBy(accessibility = "buttonSignIn")
-	@AndroidFindBy(id = "com.shaadi.android:id/btn_morph_login")
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Login']")
 	public WebElement btnNavigateSignIn;
 	
 	@iOSFindBy(accessibility = "buttonPassword")
@@ -51,6 +52,7 @@ public class LoginPageObjects extends BasePageActions {
 	
 	@iOSFindBy(accessibility = "buttonOTP")
 	public WebElement btnContinueWithOTP;
+	
 	
 	
 
@@ -62,16 +64,16 @@ public class LoginPageObjects extends BasePageActions {
 	public WebElement btnNavigateSignIniOS; // NEW SPLASH SCREEN LOGIN BUTTON
 
 	@iOSFindBy(id = "textfieldemailMobileField")
-	@AndroidFindBy(id = "com.shaadi.android:id/edt_username")
+	 @AndroidFindBy(xpath="//android.widget.EditText")
 	public WebElement editTextUserName;
 
 	@iOSFindBy(id = "textfieldpasswordField")
-	@AndroidFindBy(id = "com.shaadi.android:id/edt_password")
+	@AndroidFindBy(xpath="//android.widget.EditText")
 	public WebElement editTextPassword;
 
 	//@iOSFindBy(id = "buttonsignInButton")
 	@iOSFindBy(id = "buttonsignInWithPassword")
-	@AndroidFindBy(id = "com.shaadi.android:id/btn_login")
+    @AndroidFindBy(xpath="//android.widget.TextView[@text='Submit']")
 	public WebElement btnMainSignIn;
 
 	@iOSFindBy(accessibility = "buttonForgotPassword")
@@ -176,5 +178,8 @@ public class LoginPageObjects extends BasePageActions {
 	public WebElement GoogleSignUpBtn;
 
 
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Continue']")
+    public MobileElement continueButton;
 
+	
 }

@@ -38,9 +38,9 @@ public class LoginPage extends LoginPageObjects {
 		driver.hideKeyboard();
 
 		InputValue(editTextUserName, UserName, "Input Valid UserName", "Login-02");
-
+        click(continueButton, "clicking continue Button", "");
 		InputValue(editTextPassword, Password, "Input Valid Password", "Login-03");
-
+		
 //		   if (BaseTest.AutomationRunName.equals("Appium"))
 		if (RunEnvironment.equals("androidLocal")) {
 			driver.hideKeyboard();
