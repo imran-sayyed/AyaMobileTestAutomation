@@ -47,13 +47,13 @@ public class DriverSetUp extends BaseTest {
 		capabilities.setCapability("platformVersion", platformVersion);
 		capabilities.setCapability("newCommandTimeout", 400);
 		capabilities.setCapability("appium-version", appiumVersion);
-		capabilities.setCapability("noReset", false);
-		capabilities.setCapability("fullReset", true);
+		capabilities.setCapability("noReset", true);
+		capabilities.setCapability("fullReset", false);
 		capabilities.setCapability("autoGrantPermissions", true);
 		capabilities.setCapability("app", app);
 		capabilities.setCapability("appPackage", AppStringConstants.ANDROIDAPPPACKAGE);
 		capabilities.setCapability("appActivity", AppStringConstants.ANDROIDAPPACTIVITY);
-		capabilities.setCapability("forceMjsonwp", true);
+		capabilities.setCapability("force	Mjsonwp", true);
 		capabilities.setCapability("automationName", AutomationRunName);
 		capabilities.setCapability("autowebview", true);
 		capabilities.setCapability("chromedriverExecutable", path_to_chromedriver);

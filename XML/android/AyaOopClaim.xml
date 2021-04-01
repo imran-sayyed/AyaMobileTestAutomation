@@ -9,23 +9,11 @@
 	<test name="Shortlists_Free_Android">
 		<parameter name="userType" value="free1" />
 		<classes>
-			<class name="page.test.ShortlistsTest" />
+			<class name="page.test.AyaOOPTest" />
 		</classes>
 	</test>
 
-	<test name="MatchesProfilePage_Free_Android">
-		<parameter name="userType" value="free1" />
-		<classes>
-			<class name="page.test.MatchesProfilePageTest" />
-		</classes>
-	</test>
-
-	<test name="MatchesListingPage_Free_Android">
-		<parameter name="userType" value="free1" />
-		<classes>
-			<class name="page.test.MatchesListingTest" />
-		</classes>
-	</test>
+	
 
 
 

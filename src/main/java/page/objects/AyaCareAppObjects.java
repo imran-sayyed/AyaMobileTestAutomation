@@ -1,5 +1,7 @@
 package page.objects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -20,8 +22,8 @@ public class AyaCareAppObjects extends BasePageActions {
 	@iOSFindBy(id="Matches")
 	public WebElement MatchesTab;
 	
-	    @AndroidFindBy(xpath="(//android.widget.ImageView)[9]")
-	    public MobileElement plus;
+	    @AndroidFindBy(xpath = "//android.view.ViewGroup[@NAF='true']")
+	    public  MobileElement plus;
 	    
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Add Out Of Pocket Expense']")
 	    public MobileElement addoop;
@@ -33,9 +35,9 @@ public class AyaCareAppObjects extends BasePageActions {
 	    public MobileElement tick2;
 	    
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Continue →']")
-	    public MobileElement Cont;
+	    public MobileElement cont;
 	    
-	    @AndroidFindBy(xpath="//android.widget.TextView[@text='I don't have a receipt']")
+	    @AndroidFindBy(xpath="//android.widget.TextView[contains(@text, 'have a receipt')]")
 	    public MobileElement no_receipt;
 	    
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Ok']")
@@ -62,13 +64,14 @@ public class AyaCareAppObjects extends BasePageActions {
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text='What was this item for?']")
 	    public MobileElement what_was_this_item_for;
 	    
-	    @AndroidFindBy(xpath="(//android.widget.EditText)[2]")
+	    @AndroidFindBy(xpath="//android.widget.EditText[@text='$0.00']")
 	    public MobileElement 	amount_paid_for_item;
 	    
-	    @AndroidFindBy(xpath="(//android.view.ViewGroup)[1]")
+	    @AndroidFindBy(xpath="//android.widget.TextView[contains(@text, 'Employee')]")
 	    public MobileElement employee;
 	    
-	    
+	    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Continue']")
+	    public MobileElement continue_employee;
 	    
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Prescription Drugs  ']")
 	    public MobileElement prescription_Drugs;
@@ -83,6 +86,14 @@ public class AyaCareAppObjects extends BasePageActions {
 	   public MobileElement attest_checkbox;
 	    
 	    
+	    @AndroidFindBy(id="android:id/message")
+	    public MobileElement ayaCareClaimText;
+	    
+	    @AndroidFindBy(id="android:id/button1")
+	    public MobileElement pop_up_OK;
+	    
+	    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Done →']")
+	    public MobileElement done_Final;
 	    
 	    //add receipt
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Add receipt']")
@@ -113,6 +124,8 @@ public class AyaCareAppObjects extends BasePageActions {
 	    
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Continue']")
 	    public MobileElement Continue_button;
+	    
+	    
 	
 
 }
