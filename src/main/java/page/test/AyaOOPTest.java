@@ -58,7 +58,7 @@ public class AyaOOPTest extends BasePageActions {
 		
 	driver.hideKeyboard();
 	
-	try{locators.cont.click();}//continue not working
+	try{locators.Continue_claim_form.click();}//continue not working
 		catch(Exception e) {
 			
 			System.out.println("element not found");
@@ -66,9 +66,9 @@ public class AyaOOPTest extends BasePageActions {
 		scrollDown();
 		scrollDown();
 		locators.attest_checkbox.click();
-		try{locators.cont.click();}//not working
+		try{locators.continue_claim_submission.click();}//not working
 		catch(Exception e) {System.out.println("not found");}
-		Thread.sleep(10000);//continue and wait
+		Thread.sleep(20000);//continue and wait
 		try {
 		String s=locators.ayaCareClaimText.getText();	
 			System.out.println(s);

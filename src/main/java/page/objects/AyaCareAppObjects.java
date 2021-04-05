@@ -125,7 +125,10 @@ public class AyaCareAppObjects extends BasePageActions {
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Continue']")
 	    public MobileElement Continue_button;
 	    
+	    @AndroidFindBy(xpath="//android.widget.TextView[@text=' Continue →']")
+	    public MobileElement Continue_claim_form;
 	    
 	
-
+@AndroidFindBy(xpath="//android.widget.TextView[@text=' Continue →']")
+public MobileElement continue_claim_submission;
 }
