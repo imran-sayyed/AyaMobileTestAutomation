@@ -1,12 +1,12 @@
 {
   "searchSet": [
     {
-      "testCase": "User Performing Basic Search",
+      "testCase": "User performing OOP claim",
       "total_amount_paid": ["1"],
       "amount_you_wish_to_claim": ["1"],
       "who_was_this_item_for": ["Employee"],
       "what_was_this_item_for": ["Prescription Drug"],
-      "subcategory": [""],
+      "subcategory": ["Cancer Treatment"],
       "amount_paid_for_the_item": ["1"]
       
       

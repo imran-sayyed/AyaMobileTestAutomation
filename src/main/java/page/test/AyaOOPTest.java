@@ -54,36 +54,37 @@ public class AyaOOPTest extends BasePageActions {
 		locators.amount_you_wish_to_claim.sendKeys(searchData.amount_you_wish_to_claim.get(0).toString());// enter amount wished to claim
 		locators.continue_Claim_button.click();// enter continue claim button
 		locators.who_was_this_item_for.click();
-		
+		scrollAndClickPartialVisibleText(searchData.who_was_this_item_for.get(0).toString());
 		//locators.employee.click();
+		//scrollTillPartialVisibleText("Continue");
 		locators.continue_employee.click();
 		locators.what_was_this_item_for.click();
-		locators.prescription_Drugs.click();
+		scrollAndClickPartialVisibleText(searchData.what_was_this_item_for.get(0).toString());
+		//locators.prescription_Drugs.click();
+		//scrollTillPartialVisibleText("Continue");
 		locators.prescription_Drugs_continue.click();
-		locators.cancer_treatment.click();
+		//locators.cancer_treatment.click();
+		scrollAndClickPartialVisibleText(searchData.subcategory.get(0).toString());
+		//scrollAndClickPartialVisibleText("Continue");
 		scrollDown();//scroll till continue
 		locators.Continue_button.click();
 		Thread.sleep(3000);
-	try {
-		locators.amount_paid_for_item.sendKeys(searchData.amount_paid_for_the_item.get(0).toString());//amount paid for item
-	}	
-	catch(Exception e) {
-		
-		}
+	try {locators.amount_paid_for_item.sendKeys(searchData.amount_paid_for_the_item.get(0).toString());}//amount paid for item}	
+	catch(Exception e) {}
 		
 	driver.hideKeyboard();
 	
 	try{locators.Continue_claim_form.click();}//continue not working
-		catch(Exception e) {
-			
-			System.out.println("element not found");
-		}
+		catch(Exception e) {System.out.println("element not found");}
+	
+		scrollDown();
 		scrollDown();
 		scrollDown();
 		locators.attest_checkbox.click();
 		try{locators.continue_claim_submission.click();}//not working
 		catch(Exception e) {System.out.println("not found");}
-		Thread.sleep(20000);//continue and wait
+		waitForElementToBeDisplayed(locators.ayaCareClaimText, "Waiting for the pop up to appear", "OOP claim ");
+		
 		try {
 		String s=locators.ayaCareClaimText.getText();	
 			System.out.println(s);
