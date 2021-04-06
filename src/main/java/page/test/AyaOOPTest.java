@@ -1,11 +1,24 @@
 package page.test;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.List;
+
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import com.google.gson.reflect.TypeToken;
+
 import android.shaadi.BasePageActions;
 import android.shaadi.BaseTest;
+import data.AdvanceSearchData;
+import data.OOP_Claim_data;
 import io.appium.java_client.remote.HideKeyboardStrategy;
 import page.actions.BottomMenu;
 import page.actions.MatchesPage;
@@ -14,15 +27,16 @@ import page.objects.AyaCareAppObjects;
 public class AyaOOPTest extends BasePageActions {
 
 	AyaCareAppObjects locators ;
-	
+	Object[][] returnValue;
 	@BeforeClass(alwaysRun = true)
 	public void setUp() {
 		locators = new AyaCareAppObjects();
+		
 
 	}
 	
-	@Test(priority = 0, description = "Send an oop claim")
-	public void out_Of_Pocket_Claim_Submission() throws InterruptedException {
+	@Test(priority = 0, description = "Send an oop claim", dataProvider = "searchData")
+	public void out_Of_Pocket_Claim_Submission(OOP_Claim_data searchData) throws InterruptedException {
 
 		//locators.plus.click();// Clicking on plus sign
 		locators.addoop.click();//Choose option out of pocket
@@ -36,11 +50,12 @@ public class AyaOOPTest extends BasePageActions {
 		Thread.sleep(3000);
 		
 		//String claimID=getClaimIDFromString(locators.draftClaim.getText());//Save Claim ID 
-		locators.total_amount_paid.sendKeys("1");//enter amount paid
-		locators.amount_you_wish_to_claim.sendKeys("1");// enter amount wished to claim
+		locators.total_amount_paid.sendKeys(searchData.total_amount_paid.get(0).toString());//enter amount paid
+		locators.amount_you_wish_to_claim.sendKeys(searchData.amount_you_wish_to_claim.get(0).toString());// enter amount wished to claim
 		locators.continue_Claim_button.click();// enter continue claim button
 		locators.who_was_this_item_for.click();
-		locators.employee.click();
+		
+		//locators.employee.click();
 		locators.continue_employee.click();
 		locators.what_was_this_item_for.click();
 		locators.prescription_Drugs.click();
@@ -50,7 +65,7 @@ public class AyaOOPTest extends BasePageActions {
 		locators.Continue_button.click();
 		Thread.sleep(3000);
 	try {
-		locators.amount_paid_for_item.sendKeys("1");//amount paid for item
+		locators.amount_paid_for_item.sendKeys(searchData.amount_paid_for_the_item.get(0).toString());//amount paid for item
 	}	
 	catch(Exception e) {
 		
@@ -97,4 +112,25 @@ public class AyaOOPTest extends BasePageActions {
 		
 		
 	}
+	@DataProvider
+	public Object[][] searchData() throws FileNotFoundException {
+
+		try {
+			File search_json = new File("src/main/java/data/OOP_claim.json");
+			JsonElement jsonData = new JsonParser().parse(new FileReader(search_json.getAbsolutePath()));
+			JsonElement searchDataSet = jsonData.getAsJsonObject().get("searchSet");
+			List<OOP_Claim_data> searchData = new Gson().fromJson(searchDataSet,
+					new TypeToken<List<OOP_Claim_data>>() {
+					}.getType());
+			returnValue = new Object[searchData.size()][1];
+			int index = 0;
+			for (Object[] each : returnValue) {
+				each[0] = searchData.get(index++);
+			}
+		} catch (Exception e) {
+			System.out.print(e);
+		}
+		return returnValue;
+	}
+	
 }

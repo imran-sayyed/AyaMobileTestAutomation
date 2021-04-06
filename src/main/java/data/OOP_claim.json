@@ -1,0 +1,15 @@
+{
+  "searchSet": [
+    {
+      "testCase": "User Performing Basic Search",
+      "total_amount_paid": ["1"],
+      "amount_you_wish_to_claim": ["1"],
+      "who_was_this_item_for": ["Employee"],
+      "what_was_this_item_for": ["Prescription Drug"],
+      "subcategory": [""],
+      "amount_paid_for_the_item": ["1"]
+      
+      
+    }
+  ]}
+
