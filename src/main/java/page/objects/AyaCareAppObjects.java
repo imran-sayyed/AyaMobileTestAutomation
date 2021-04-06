@@ -22,7 +22,7 @@ public class AyaCareAppObjects extends BasePageActions {
 	@iOSFindBy(id="Matches")
 	public WebElement MatchesTab;
 	
-	    @AndroidFindBy(xpath = "//android.view.ViewGroup[@NAF='true']")
+	    @AndroidFindBy(accessibility  = "middleAddIconUnique")
 	    public  MobileElement plus;
 	    
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Add Out Of Pocket Expense']")
