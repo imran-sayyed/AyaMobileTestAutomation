@@ -17,11 +17,11 @@ import com.google.gson.reflect.TypeToken;
 
 import android.shaadi.BasePageActions;
 import android.shaadi.BaseTest;
-import data.AdvanceSearchData;
+
 import data.OOP_Claim_data;
 import io.appium.java_client.remote.HideKeyboardStrategy;
 import page.actions.BottomMenu;
-import page.actions.MatchesPage;
+
 import page.objects.AyaCareAppObjects;
 
 public class AyaOOPTest extends BasePageActions {

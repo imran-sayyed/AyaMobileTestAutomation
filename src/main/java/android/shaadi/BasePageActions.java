@@ -39,7 +39,7 @@ import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 import com.relevantcodes.extentreports.LogStatus;
 
-import data.PaymentRevampData;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
@@ -49,7 +49,7 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import page.objects.BottomMenuPageObjects;
-import page.objects.SearchObjects;
+
 
 public class BasePageActions extends BaseTest {
 	public static String text;
@@ -1494,13 +1494,7 @@ public class BasePageActions extends BaseTest {
 	}
 
 	// NOT USED ANYWHERE
-	public void closeUnWantedPage() {
-		if (isDisplayed(SearchObjects.btncloseLayer)) {
-			SearchObjects.btncloseLayer.click();
-		} else if (isDisplayed(SearchObjects.btnSkipInvitation)) {
-			SearchObjects.btnSkipInvitation.click();
-		}
-	}
+	
 
 	public static void selectValueFromPickerWheel(String selectStr, boolean isclick) {
 		// isclick added because some picker wheel values will require click event when
@@ -1624,26 +1618,7 @@ public class BasePageActions extends BaseTest {
 		return bln_ExpectedElementToSelect;
 	}
 
-	public Object[][] getDataFromJson(String pathToJson, String dataName, Object[][] returnValue) {
-
-		try {
-			File PP1_json = null;
-			PP1_json = new File(pathToJson);
-			JsonElement jsonData = new JsonParser().parse(new FileReader(PP1_json.getAbsolutePath()));
-			JsonElement dataSet = jsonData.getAsJsonObject().get(dataName);
-			List<PaymentRevampData> testData = new Gson().fromJson(dataSet, new TypeToken<List<PaymentRevampData>>() {
-			}.getType());
-			returnValue = new Object[testData.size()][1];
-			int index = 0;
-			for (Object[] each : returnValue) {
-				each[0] = testData.get(index++);
-			}
-		} catch (Exception e) {
-			System.out.println("Exception Occured " + e.getMessage());
-		}
-		return returnValue;
-
-	}
+	
 
 	public boolean areElementsOverlapping(WebElement element1, WebElement element2) {
 		Rectangle r1 = ((RemoteWebElement) element1).getRect();

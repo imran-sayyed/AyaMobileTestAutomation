@@ -18,21 +18,21 @@ import android.shaadi.BasePageActions;
 import data.LoginData;
 import page.actions.BottomMenu;
 import page.actions.LoginPage;
-import page.actions.MyShaadiPage;
+
 
 public class LoginTest extends BasePageActions {
 	Object[][] liveUser, sandboxUser;
 	boolean isSandboxTesting = false;
 	LoginPage login;
 	BottomMenu menu;
-	MyShaadiPage shaadipage;
+	//MyShaadiPage shaadipage;
 
 	@BeforeClass(alwaysRun = true)
 	public void setUp() {
 
 		login = new LoginPage();
 		menu = new BottomMenu();
-		shaadipage = new MyShaadiPage();
+	//	shaadipage = new MyShaadiPage();
 	}
 
 	@Test(priority = 0, groups = "", description = "Navigate to sign in page")
@@ -57,9 +57,9 @@ public class LoginTest extends BasePageActions {
 			}
 			if (logindata.isLogout) {
 				menu.clickMyShaadiTab();
-				shaadipage.ScrollToView_AccountSettings();
-				shaadipage.clickOnAccountSettings();
-				shaadipage.ClickLogout();
+//				shaadipage.ScrollToView_AccountSettings();
+//				shaadipage.clickOnAccountSettings();
+//				shaadipage.ClickLogout();
 			}
 		} else {
 
@@ -76,8 +76,8 @@ public class LoginTest extends BasePageActions {
 
 			if (logindata.isLogout) {
 				menu.clickMyShaadiTab();
-				shaadipage.scrollAndClickOnAccountSettings();
-				shaadipage.ClickLogout();
+//				shaadipage.scrollAndClickOnAccountSettings();
+//				shaadipage.ClickLogout();
 			}
 		}
 
