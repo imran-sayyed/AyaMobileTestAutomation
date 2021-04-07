@@ -39,6 +39,7 @@ public class AyaOOPTest extends BasePageActions {
 	public void out_Of_Pocket_Claim_Submission(OOP_Claim_data searchData) throws InterruptedException {
 
 		locators.plus.click();// Clicking on plus sign
+		Thread.sleep(3000);
 		locators.addoop.click();//Choose option out of pocket
 		locators.tick1.click();//choose first tick option
 		locators.tick2.click();//choose second tick option
