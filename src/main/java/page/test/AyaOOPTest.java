@@ -22,6 +22,7 @@ import android.shaadi.BaseTest;
 
 import data.OOP_Claim_data;
 import io.appium.java_client.remote.HideKeyboardStrategy;
+import page.actions.AyaCareAppActions;
 import page.actions.BottomMenu;
 
 import page.objects.AyaCareAppObjects;
@@ -89,13 +90,12 @@ public class AyaOOPTest extends BasePageActions {
 		waitForElementToBeDisplayed(locators.ayaCareClaimText, "Waiting for the pop up to appear", "OOP claim ");
 		
 		try {
-		String s=locators.ayaCareClaimText.getText();	
+			String s=locators.ayaCareClaimText.getText();	
 			System.out.println(s);
-		}
-		catch(Exception e){
-			System.out.println("Not found");
-			
-		}
+			String claimID=AyaCareAppActions.extractClaimID(s);
+			System.out.println(claimID);
+			}
+		catch(Exception e){System.out.println("Calim ID not found");}
 		locators.pop_up_OK.click();//click on Ok pop up no exception
 		
 		locators.done_Final.click();//click on done
@@ -118,17 +118,7 @@ public class AyaOOPTest extends BasePageActions {
 		AssertEquals(locators.dependents, "Dependents","Verifying dependents");
 	}
 	
-	public static  String getClaimIDFromString(String s) {
-		
-		
-		String[] claim_split=s.split("#");
-		String claimID=claim_split[1].trim();
-		
-		return claimID;
-		
-		
-		
-	}
+	
 	@DataProvider
 	public Object[][] searchData() throws FileNotFoundException {
 
