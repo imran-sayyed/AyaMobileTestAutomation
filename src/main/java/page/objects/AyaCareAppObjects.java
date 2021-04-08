@@ -131,4 +131,23 @@ public class AyaCareAppObjects extends BasePageActions {
 	
 @AndroidFindBy(xpath="//android.widget.TextView[@text=' Continue →']")
 public MobileElement continue_claim_submission;
+
+@AndroidFindBy(xpath="//android.widget.TextView[@text='PLAN DETAILS']")
+public MobileElement planDetails;
+
+@AndroidFindBy(xpath="//android.widget.TextView[@text='Current Account Balance']")
+public MobileElement current_Account_Balance;
+
+@AndroidFindBy(xpath="//android.widget.TextView[@text='Current Plan Year Begin']")
+public MobileElement current_Plan_Year_Begin;
+@AndroidFindBy(xpath="//android.widget.TextView[@text='Current Plan Year End']")
+public MobileElement current_Plan_Year_End;
+@AndroidFindBy(xpath="//android.widget.TextView[@text='Annual Contribution']")
+public MobileElement annual_Contribution;
+@AndroidFindBy(xpath="//android.widget.TextView[@text='Contribution Frequency']")
+public MobileElement contribution_Frequency;
+@AndroidFindBy(xpath="//android.widget.TextView[@text='Dependents']")
+public MobileElement dependents;
+
+
 }

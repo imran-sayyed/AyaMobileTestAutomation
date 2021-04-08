@@ -1,5 +1,7 @@
 package page.test;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -35,7 +37,7 @@ public class AyaOOPTest extends BasePageActions {
 
 	}
 	
-	@Test(priority = 0, description = "Send an oop claim", dataProvider = "searchData")
+	@Test(priority = 1, description = "Send an oop claim", dataProvider = "searchData")
 	public void out_Of_Pocket_Claim_Submission(OOP_Claim_data searchData) throws InterruptedException {
 
 		locators.plus.click();// Clicking on plus sign
@@ -101,6 +103,19 @@ public class AyaOOPTest extends BasePageActions {
 		
 		
 		
+	}
+	
+	@Test(priority = 2, description = "Plan Detail Test")
+	public void plan_Detail() throws InterruptedException{
+
+		click(locators.planDetails, "Clicking on plan details", "Plan Detail Test");
+		waitForElementToBeDisplayed(locators.current_Account_Balance, "waiting while loader disappears", "Plan Detail Test");
+		AssertEquals(locators.current_Account_Balance, "Current Account Balance", "verify current account balance");
+		AssertEquals(locators.current_Plan_Year_Begin, "Current Plan Year Begin", "verifying current plan year begin");
+		AssertEquals(locators.current_Plan_Year_End, "Current Plan Year End", "Verifying current plan year End");
+		AssertEquals(locators.annual_Contribution, "Annual Contribution", "Verifying annual contribution");
+		AssertEquals(locators.contribution_Frequency, "Contribution Frequency", "Verifying contribution frequency");
+		AssertEquals(locators.dependents, "Dependents","Verifying dependents");
 	}
 	
 	public static  String getClaimIDFromString(String s) {
