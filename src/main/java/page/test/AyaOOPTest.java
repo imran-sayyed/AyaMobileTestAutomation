@@ -6,7 +6,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.List;
-import java.util.Scanner;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -39,7 +38,7 @@ public class AyaOOPTest extends BasePageActions {
 
 	}
 	
-	@Test(priority = 0, description = "Send an oop claim", dataProvider = "searchData")
+	@Test(priority = 1, description = "Send an oop claim", dataProvider = "searchData")
 	public void out_Of_Pocket_Claim_Submission(OOP_Claim_data searchData) throws InterruptedException {
 
 		locators.plus.click();// Clicking on plus sign
@@ -106,7 +105,7 @@ public class AyaOOPTest extends BasePageActions {
 		
 	}
 	
-	@Test(priority = 1, description = "Plan Detail Test")
+	@Test(priority = 2, description = "Plan Detail Test")
 	public void plan_Detail() throws InterruptedException{
 
 		click(locators.planDetails, "Clicking on plan details", "Plan Detail Test");
@@ -118,8 +117,6 @@ public class AyaOOPTest extends BasePageActions {
 		AssertEquals(locators.contribution_Frequency, "Contribution Frequency", "Verifying contribution frequency");
 		AssertEquals(locators.dependents, "Dependents","Verifying dependents");
 	}
-	
-	
 	
 	
 	@DataProvider
