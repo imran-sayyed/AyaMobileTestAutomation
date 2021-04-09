@@ -43,14 +43,16 @@ public class DriverSetUp extends BaseTest {
 		System.out.println("Testing started");
 		DeviceSetup.setAndroidcapabilities();// sets all the parameters required for Android capabilities
 		DeviceSetup.validateAndroidDevice();
-		capabilities.setCapability("deviceName", DeviceName);
-		capabilities.setCapability("platformVersion", platformVersion);
+		capabilities.setCapability("deviceName", "Google Pixel 3");
+		capabilities.setCapability("platformVersion", "9.0");
 		capabilities.setCapability("newCommandTimeout", 400);
 		capabilities.setCapability("appium-version", appiumVersion);
 		capabilities.setCapability("noReset", true);
 		capabilities.setCapability("fullReset", false);
 		capabilities.setCapability("autoGrantPermissions", true);
-		capabilities.setCapability("app", app);
+		capabilities.setCapability("app", "bs://bc7a9f0323c54f7641fee87888b940b7a1c03f98");
+		capabilities.setCapability("browserstack.user", "imransayyed4");
+		capabilities.setCapability("browserstack.key", "szqQh2dJyT1AnStypgqn");
 		capabilities.setCapability("appPackage", AppStringConstants.ANDROIDAPPPACKAGE);
 		capabilities.setCapability("appActivity", AppStringConstants.ANDROIDAPPACTIVITY);
 		capabilities.setCapability("force	Mjsonwp", true);
@@ -58,7 +60,7 @@ public class DriverSetUp extends BaseTest {
 		capabilities.setCapability("autowebview", true);
 		capabilities.setCapability("chromedriverExecutable", path_to_chromedriver);
 		capabilities.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", false));
-		driver = new AndroidDriver(new URL(Url), capabilities);
+		driver = new AndroidDriver(new URL("http://hub.browserstack.com/wd/hub"), capabilities);
 		//driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);		
 		System.out.println("Driver Initialized ----- " + driver);
 		
