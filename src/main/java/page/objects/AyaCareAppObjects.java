@@ -138,6 +138,9 @@ public MobileElement planDetails;
 @AndroidFindBy(xpath="//android.widget.TextView[@text='Current Account Balance']")
 public MobileElement current_Account_Balance;
 
+@AndroidFindBy(xpath="//android.widget.TextView[@text='Current Account Balance']/following-sibling::android.widget.TextView")
+public MobileElement current_Account_Balance_amount;
+
 @AndroidFindBy(xpath="//android.widget.TextView[@text='Current Plan Year Begin']")
 public MobileElement current_Plan_Year_Begin;
 @AndroidFindBy(xpath="//android.widget.TextView[@text='Current Plan Year End']")
@@ -149,5 +152,15 @@ public MobileElement contribution_Frequency;
 @AndroidFindBy(xpath="//android.widget.TextView[@text='Dependents']")
 public MobileElement dependents;
 
+@AndroidFindBy(xpath="//android.widget.TextView[@text='HSA Current Balance']")
+public MobileElement hsaCurrentBalance;
 
+@AndroidFindBy(xpath="//android.widget.TextView[@text='HSA Current Balance']/following-sibling::android.widget.TextView")
+public MobileElement hsaCurrentBalanceAmount;
+
+@AndroidFindBy(xpath="//android.widget.TextView[@text='WSA Opening Balance']")
+public MobileElement wsaCurrentBalance;
+
+@AndroidFindBy(xpath="//android.widget.TextView[@text='WSA Opening Balance']/following-sibling::android.widget.TextView")
+public MobileElement wsaCurrentBalanceAmount;
 }

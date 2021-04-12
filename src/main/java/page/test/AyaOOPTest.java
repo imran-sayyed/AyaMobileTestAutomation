@@ -1,6 +1,7 @@
 package page.test;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,6 +9,7 @@ import java.io.FileReader;
 import java.util.List;
 import java.util.Scanner;
 
+import org.seleniumhq.jetty7.util.log.Log;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -39,7 +41,7 @@ public class AyaOOPTest extends BasePageActions {
 
 	}
 	
-	@Test(priority = 0, description = "Send an oop claim", dataProvider = "searchData")
+	@Test(priority = 0, description = "Send an oop claim", dataProvider = "searchData",enabled = false)
 	public void out_Of_Pocket_Claim_Submission(OOP_Claim_data searchData) throws InterruptedException {
 
 		locators.plus.click();// Clicking on plus sign
@@ -106,6 +108,7 @@ public class AyaOOPTest extends BasePageActions {
 		
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test(priority = 1, description = "Plan Detail Test")
 	public void plan_Detail() throws InterruptedException{
 
@@ -117,6 +120,21 @@ public class AyaOOPTest extends BasePageActions {
 		AssertEquals(locators.annual_Contribution, "Annual Contribution", "Verifying annual contribution");
 		AssertEquals(locators.contribution_Frequency, "Contribution Frequency", "Verifying contribution frequency");
 		AssertEquals(locators.dependents, "Dependents","Verifying dependents");
+		click(locators.current_Account_Balance, "Clicking on account balance", "Plan Detail test");
+		String current_acount_balance=getText(locators.current_Account_Balance_amount, "Geting current account balance from element");
+		String hsabalance =getText(locators.hsaCurrentBalanceAmount, "get HSA balance");
+		String wsaBalance= getText(locators.wsaCurrentBalanceAmount, "Get WSA balance");
+		
+		
+		
+		assertTrue(isElementDisplayed(locators.hsaCurrentBalance), "Verify if hsa balance is displayed");
+		assertTrue(isElementDisplayed(locators.wsaCurrentBalance), "Verify if wsa balance is displayed" );
+		
+		System.out.println("Current account balance is  "+current_acount_balance);
+		System.out.println("HSA balance is "+hsabalance);
+		System.out.println("WSA Balance is "+ wsaBalance);
+//		System.out.println(locators.hsaCurrentBalanceAmount.getText());
+//		System.out.println(locators.wsaCurrentBalanceAmount.getText());
 	}
 	
 	
