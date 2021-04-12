@@ -92,7 +92,7 @@ public class AyaCareAppObjects extends BasePageActions {
 	    @AndroidFindBy(id="android:id/button1")
 	    public MobileElement pop_up_OK;
 	    
-	    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Done →']")
+	    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Done')]")
 	    public MobileElement done_Final;
 	    
 	    //add receipt

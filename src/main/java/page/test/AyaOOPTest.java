@@ -22,6 +22,8 @@ import android.shaadi.BasePageActions;
 import android.shaadi.BaseTest;
 
 import data.OOP_Claim_data;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.remote.HideKeyboardStrategy;
 import page.actions.AyaCareAppActions;
 import page.actions.BottomMenu;
@@ -88,16 +90,18 @@ public class AyaOOPTest extends BasePageActions {
 		locators.attest_checkbox.click();
 		try{locators.continue_claim_submission.click();}//not working
 		catch(Exception e) {System.out.println("not found");}
-		waitForElementToBeDisplayed(locators.ayaCareClaimText, "Waiting for the pop up to appear", "OOP claim ");
+		waitForElementToBeDisplayedGeneric(locators.ayaCareClaimText, "Waiting for the pop up to appear", "OOP claim ");
 		
 		try {
+			
 			String s=locators.ayaCareClaimText.getText();	
 			System.out.println(s);
 			String claimID=AyaCareAppActions.extractClaimID(s);
 			System.out.println(claimID);
+			locators.pop_up_OK.click();//click on Ok pop up no exception
+			
 			}
-		catch(Exception e){System.out.println("Calim ID not found");}
-		locators.pop_up_OK.click();//click on Ok pop up no exception
+		catch(Exception e){System.out.println("Claim ID pop not found");}
 		
 		locators.done_Final.click();//click on done
 		
@@ -105,6 +109,8 @@ public class AyaOOPTest extends BasePageActions {
 		
 		
 	}
+	
+	
 	
 	@Test(priority = 1, description = "Plan Detail Test")
 	public void plan_Detail() throws InterruptedException{
