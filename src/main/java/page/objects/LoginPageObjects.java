@@ -181,5 +181,11 @@ public class LoginPageObjects extends BasePageActions {
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Continue']")
     public MobileElement continueButton;
 
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Forgot Password']")
+    public MobileElement forgotPasswordLink;
+	
+	
+	@AndroidFindBy(xpath="//android.widget.EditText[@text='Enter your email']")
+	public WebElement enterYourEmail;
 	
 }

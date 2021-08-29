@@ -33,12 +33,13 @@ public class LoginPage extends LoginPageObjects {
 		click(btnNavigateSignIniOS, "Click on SignIn Button to Navigate Login Page", "Login-01");
 	}
 
-	public void InputUserNamePassword(String UserName, String Password) {
+	public void InputUserNamePassword(String UserName, String Password) throws InterruptedException {
 
 		driver.hideKeyboard();
 
 		InputValue(editTextUserName, UserName, "Input Valid UserName", "Login-02");
         click(continueButton, "clicking continue Button", "");
+       Thread.sleep(1000);
 		InputValue(editTextPassword, Password, "Input Valid Password", "Login-03");
 		
 //		   if (BaseTest.AutomationRunName.equals("Appium"))

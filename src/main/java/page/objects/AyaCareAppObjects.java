@@ -22,25 +22,25 @@ public class AyaCareAppObjects extends BasePageActions {
 	@iOSFindBy(id="Matches")
 	public WebElement MatchesTab;
 	
-	    @AndroidFindBy(accessibility  = "middleAddIconUnique")
+	    @AndroidFindBy(xpath  = "//android.view.ViewGroup[@content-desc=\"middleAddIconUnique\"]/android.widget.ImageView")
 	    public  MobileElement plus;
 	    
-	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Add Out Of Pocket Expense']")
+	    @AndroidFindBy(xpath="//*[contains(@text,'Add Out Of')]")
 	    public MobileElement addoop;
 	    
 	    @AndroidFindBy(xpath="(//android.widget.ImageView)[2]")
 	    public MobileElement tick1;
 	    
-	    @AndroidFindBy(xpath="(//android.widget.ImageView)[3]")
-	    public MobileElement tick2;
+//	    @AndroidFindBy(xpath="(//android.widget.ImageView)[3]")
+//	    public MobileElement tick2;
 	    
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Continue →']")
 	    public MobileElement cont;
 	    
-	    @AndroidFindBy(xpath="//android.widget.TextView[contains(@text, 'have a receipt')]")
+	    @AndroidFindBy(xpath="//*[contains(@text,'have a receipt')]")
 	    public MobileElement no_receipt;
 	    
-	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Ok']")
+	    @AndroidFindBy(xpath="//*[@text='Ok']")
 	    public MobileElement ok_button;
 	    
 	    @AndroidFindBy(xpath="(//android.widget.TextView)[0]")
@@ -49,7 +49,7 @@ public class AyaCareAppObjects extends BasePageActions {
 	    @AndroidFindBy(xpath="(//android.widget.EditText)[1]")
 	    public MobileElement total_amount_paid;
 	    
-	    @AndroidFindBy(xpath="(//android.widget.EditText)[2]")
+	    @AndroidFindBy(xpath="(//android.widget.EditText)[1]")
 	    public MobileElement amount_you_wish_to_claim;
 	    
 	    @AndroidFindBy(xpath="(//android.view.ViewGroup)[4]")
@@ -58,15 +58,17 @@ public class AyaCareAppObjects extends BasePageActions {
 	    
 	    //Claim Items Objects
 	    
-	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Who was this item for?']")
+	    @AndroidFindBy(xpath="//*[@text='Who was this item for?']")
 	    public MobileElement who_was_this_item_for;
 	    
-	    @AndroidFindBy(xpath="//android.widget.TextView[@text='What was this item for?']")
+	    @AndroidFindBy(xpath="//*[@text='What was this item for?']")
 	    public MobileElement what_was_this_item_for;
+//	    
+//	    @AndroidFindBy(xpath="//android.widget.EditText[@text='$0.00']")
+//	    public MobileElement 	amount_paid_for_item;
 	    
-	    @AndroidFindBy(xpath="//android.widget.EditText[@text='$0.00']")
+	    @AndroidFindBy(xpath="(//android.widget.EditText)[1]")
 	    public MobileElement 	amount_paid_for_item;
-	    
 	    @AndroidFindBy(xpath="//android.widget.TextView[contains(@text, 'Employee')]")
 	    public MobileElement employee;
 	    
@@ -82,7 +84,7 @@ public class AyaCareAppObjects extends BasePageActions {
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Cancer Treatment  ']")
 	    public MobileElement cancer_treatment;
 	    
-	    @AndroidFindBy(xpath="//android.widget.TextView[@text='I attest that the information above is correct']")
+	    @AndroidFindBy(xpath="//android.widget.TextView[@text='The information above is correct.']")
 	   public MobileElement attest_checkbox;
 	    
 	    
@@ -92,7 +94,7 @@ public class AyaCareAppObjects extends BasePageActions {
 	    @AndroidFindBy(id="android:id/button1")
 	    public MobileElement pop_up_OK;
 	    
-	    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Done →']")
+	    @AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Done')]")
 	    public MobileElement done_Final;
 	    
 	    //add receipt
@@ -124,6 +126,9 @@ public class AyaCareAppObjects extends BasePageActions {
 	    
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text='Continue']")
 	    public MobileElement Continue_button;
+	    
+	    @AndroidFindBy(xpath="//android.widget.TextView[contains(@text, ' + Add another item ')]")
+	    public MobileElement addAnotherItems;
 	    
 	    @AndroidFindBy(xpath="//android.widget.TextView[@text=' Continue →']")
 	    public MobileElement Continue_claim_form;
@@ -163,4 +168,12 @@ public MobileElement wsaCurrentBalance;
 
 @AndroidFindBy(xpath="//android.widget.TextView[@text='WSA Opening Balance']/following-sibling::android.widget.TextView")
 public MobileElement wsaCurrentBalanceAmount;
+
+@AndroidFindBy(xpath="//android.widget.TextView[@text='Menu']")
+public MobileElement menu;
+
+@AndroidFindBy(xpath="//android.widget.TextView[@text='Signout']")
+public MobileElement signOut;
+
+
 }

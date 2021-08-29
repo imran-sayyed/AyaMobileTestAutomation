@@ -470,6 +470,18 @@ public class BasePageActions extends BaseTest {
 			takeScreenshot(tc);
 		}
 	}
+	
+	
+	public static void waitForElementToBeDisplayedGeneric(WebElement locator, String description, String tc) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, 60);
+			wait.until(ExpectedConditions.visibilityOf(locator));
+			extentTest.log(LogStatus.PASS, description);
+		} catch (NoSuchElementException e) {
+			System.out.println("NoSuchElementException:");
+			
+		} 
+	}
 
 	public static void waitForElementToBeClickable(WebElement locator, String description, String tc) {
 		try {

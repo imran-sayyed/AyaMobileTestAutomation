@@ -1,5 +1,6 @@
 package page.test;
 
+import static org.junit.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -9,6 +10,8 @@ import java.io.FileReader;
 import java.util.List;
 import java.util.Scanner;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.seleniumhq.jetty7.util.log.Log;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -27,89 +30,107 @@ import data.OOP_Claim_data;
 import io.appium.java_client.remote.HideKeyboardStrategy;
 import page.actions.AyaCareAppActions;
 import page.actions.BottomMenu;
+import page.objects.LoginPageObjects;
 
 import page.objects.AyaCareAppObjects;
 
 public class AyaOOPTest extends BasePageActions {
 
 	AyaCareAppObjects locators ;
+	LoginPageObjects loginPageObject;
+	AyaCareAppActions items;
 	Object[][] returnValue;
 	@BeforeClass(alwaysRun = true)
 	public void setUp() {
 		locators = new AyaCareAppObjects();
-		
+		items = new AyaCareAppActions();
 
 	}
 	
-	@Test(priority = 0, description = "Send an oop claim", dataProvider = "searchData",enabled = false)
+	
+	@Test(priority = 0, description = "Send an oop claim", dataProvider = "searchData",enabled = true)
 	public void out_Of_Pocket_Claim_Submission(OOP_Claim_data searchData) throws InterruptedException {
 
+	//	for(int j=0; j<Integer.parseInt(searchData.number_of_runs.get(0).toString());j++) {
+		WebDriverWait wait = new WebDriverWait(driver,20);
+		wait.until(ExpectedConditions.visibilityOf(locators.plus));
+		
 		locators.plus.click();// Clicking on plus sign
-		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(locators.addoop));
 		locators.addoop.click();//Choose option out of pocket
+		wait.until(ExpectedConditions.visibilityOf(locators.tick1));
 		locators.tick1.click();//choose first tick option
-		locators.tick2.click();//choose second tick option
+		//locators.tick2.click();//choose second tick option
 		locators.cont.click();//click on continue
+		
+		wait.until(ExpectedConditions.visibilityOf(locators.no_receipt));
 		locators.no_receipt.click();//choose option no receipt
+		
+		wait.until(ExpectedConditions.visibilityOf(locators.ok_button));
 		locators.ok_button.click();//click ok Button
 		
 		
-		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(locators.amount_you_wish_to_claim));
 		
 		//String claimID=getClaimIDFromString(locators.draftClaim.getText());//Save Claim ID 
-		locators.total_amount_paid.sendKeys(searchData.total_amount_paid.get(0).toString());//enter amount paid
+		//locators.total_amount_paid.sendKeys(searchData.total_amount_paid.get(0).toString());//enter amount paid
 		locators.amount_you_wish_to_claim.sendKeys(searchData.amount_you_wish_to_claim.get(0).toString());// enter amount wished to claim
-		locators.continue_Claim_button.click();// enter continue claim button
-		locators.who_was_this_item_for.click();
-		scrollAndClickPartialVisibleText(searchData.who_was_this_item_for.get(0).toString());
-		//locators.employee.click();
-		//scrollTillPartialVisibleText("Continue");
-		locators.continue_employee.click();
-		locators.what_was_this_item_for.click();
-		scrollAndClickPartialVisibleText(searchData.what_was_this_item_for.get(0).toString());
-		//locators.prescription_Drugs.click();
-		//scrollTillPartialVisibleText("Continue");
-		locators.prescription_Drugs_continue.click();
-		//locators.cancer_treatment.click();
-		scrollAndClickPartialVisibleText(searchData.subcategory.get(0).toString());
-		//scrollAndClickPartialVisibleText("Continue");
-		scrollDown();//scroll till continue
-		locators.Continue_button.click();
-		Thread.sleep(3000);
-	try {locators.amount_paid_for_item.sendKeys(searchData.amount_paid_for_the_item.get(0).toString());}//amount paid for item}	
-	catch(Exception e) {}
+	//	locators.continue_Claim_button.click();// enter continue claim button
+		locators.cont.click();// enter continue claim button
+		//Claim Items Page
 		
-	driver.hideKeyboard();
-	
-	try{locators.Continue_claim_form.click();}//continue not working
+		int numberOfItems=searchData.who_was_this_item_for.size();
+		int i=0;
+		
+		while(numberOfItems>0)
+		{			
+			items.enterItemDetails(locators,searchData,i);
+			numberOfItems--;
+			i++;
+			if (numberOfItems>0) {
+		click(locators.addAnotherItems, "clicking on add another item", "add oop claim");
+//if(numberOfItems==1)
+	scrollTillPartialVisibleText("Continue");
+	Thread.sleep(3000);
+			}
+			else
+				break;
+		}
+		
+		scrollTillPartialVisibleText("Continue");
+	try{locators.Continue_claim_form.click();}
 		catch(Exception e) {System.out.println("element not found");}
 	
-		scrollDown();
-		scrollDown();
-		scrollDown();
+	Thread.sleep(3000);
+	scrollDownToElement(locators.continue_claim_submission);
+	wait.until(ExpectedConditions.visibilityOf(locators.attest_checkbox));
+//		scrollDown();
+//		scrollDown();
+//		scrollDown();
 		locators.attest_checkbox.click();
 		try{locators.continue_claim_submission.click();}//not working
 		catch(Exception e) {System.out.println("not found");}
-		waitForElementToBeDisplayed(locators.ayaCareClaimText, "Waiting for the pop up to appear", "OOP claim ");
+		waitForElementToBeDisplayedGeneric(locators.ayaCareClaimText, "Waiting for the pop up to appear", "OOP claim ");
 		
 		try {
 			String s=locators.ayaCareClaimText.getText();	
 			System.out.println(s);
 			String claimID=AyaCareAppActions.extractClaimID(s);
 			System.out.println(claimID);
+			locators.pop_up_OK.click();//click on Ok pop up no exception
 			}
-		catch(Exception e){System.out.println("Calim ID not found");}
-		locators.pop_up_OK.click();//click on Ok pop up no exception
-		
-		locators.done_Final.click();//click on done
+		catch(Exception e){System.out.println("Claim ID pop not found");}
 		
 		
+		//locators.done_Final.click();//click on done
+		ClickNoException(locators.done_Final, 20, "clicking on done final", "OOP claim submission");
 		
+	//	}
 		
 	}
 	
 	@SuppressWarnings("deprecation")
-	@Test(priority = 1, description = "Plan Detail Test")
+//@Test(priority = 1, description = "Plan Detail Test",enabled = true)
 	public void plan_Detail() throws InterruptedException{
 
 		click(locators.planDetails, "Clicking on plan details", "Plan Detail Test");
@@ -138,6 +159,22 @@ public class AyaOOPTest extends BasePageActions {
 	}
 	
 	
+	//@Test(priority = 2, description = "Forgot password Test",enabled=true)
+	public void forgot_password() throws InterruptedException {
+		
+		click(locators.menu, "Click on menu", "Forgot password Test");
+		click(locators.signOut, "Click on sign out", "Forgot password Test");
+		click(locators.pop_up_OK, "Click on ok", "Forgot password Test");
+		
+		click(items.btnNavigateSignIn, "Click on SignIn Button to Navigate Login Page", "Login-01");
+		click(items.forgotPasswordLink, "Clicking on forgot password link", "Forgot password Test");
+	InputValue(items.enterYourEmail, "qc+prehsa01142021@ayapayments.com", "", "");
+		click(items.continuebutton, "", "");
+		click(items.sendCodeButton, "", "");
+	waitForElementToBeDisplayedGeneric(items.didntemail, "", "");
+		
+		
+	}
 	
 	
 	@DataProvider

@@ -2,13 +2,13 @@
   "searchSet": [
     {
       "testCase": "User performing OOP claim",
-      "total_amount_paid": ["1.20"],
-      "amount_you_wish_to_claim": ["1.20"],
+      "total_amount_paid": ["1.5","1.0"],
+      "amount_you_wish_to_claim": ["1.5","1.0"],
       "who_was_this_item_for": ["Employee"],
-      "what_was_this_item_for": ["Prescription Drug"],
-      "subcategory": ["Cancer Treatment"],
-      "amount_paid_for_the_item": ["1.20"]
-      
+      "what_was_this_item_for": ["Prescription Drug","Dental"],
+      "subcategory": ["Cancer Treatment","Orthodontic Work"],
+      "amount_paid_for_the_item": ["1.5","0.5"],
+      "number_of_runs": ["2"]
       
     }
   ]}

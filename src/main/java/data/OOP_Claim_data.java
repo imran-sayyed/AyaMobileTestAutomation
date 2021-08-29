@@ -10,5 +10,5 @@ public class OOP_Claim_data {
 	public ArrayList<Object> what_was_this_item_for = new ArrayList<Object>();
 	public ArrayList<Object> subcategory = new ArrayList<Object>();
 	public ArrayList<Object> amount_paid_for_the_item = new ArrayList<Object>();
-	
+	public ArrayList<Object> number_of_runs = new ArrayList<Object>();
 }
