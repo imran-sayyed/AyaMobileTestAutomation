@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Matches_Free1">
+	<parameter name="pod" value="matchmaking"></parameter>
+	<parameter name="RunEnvironment" value="iOSLocal"></parameter>
+
+
+
+	<test name="Shortlists_Free_Android">
+		<parameter name="userType" value="free1" />
+		<classes>
+			<class name="page.test.AyaOOPTest" />
+		</classes>
+	</test>
+
+	
+
+
+
+	<!-- <test name="UploadPhotoCard"> <parameter name="userType" value="free2" 
+		/> <classes> <class name="page.test.UploadPhotoCardTest" /> </classes> </test> -->
+
+
+	<!-- Test -->
+</suite> <!-- Suite -->

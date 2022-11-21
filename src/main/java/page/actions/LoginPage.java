@@ -24,9 +24,9 @@ public class LoginPage extends LoginPageObjects {
 	public void NavigateSignIn() {
 		click(btnNavigateSignIn, "Click on SignIn Button to Navigate Login Page", "Login-01");
 		
-		if (RunEnvironment.equalsIgnoreCase("iosLocal")) {
-			click(btnContinueWithPassword, "Click on Continue with password Button to Navigate Login Page", "Login-01");
-		}
+//		if (RunEnvironment.equalsIgnoreCase("iosLocal")) {
+//			click(btnContinueWithPassword, "Click on Continue with password Button to Navigate Login Page", "Login-01");
+//		}
 	}
 
 	public void NavigateSignIniOS() {

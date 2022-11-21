@@ -65,11 +65,11 @@ public class UserProperty {
 
 	public static final String iosPlatformname="iOSLocal";
 	
-	public static final String APP_PACKAGE="com.shaadi.android";
+	public static final String APP_PACKAGE="com.novahsa.app";
 	
 	public static final String APP_FullReset="app.fullreset";
 	
-	public static final String APP_ACTIVITY="com.shaadi.android.ui.splash.SplashScreenActivity";
+	public static final String APP_ACTIVITY="com.novahsa.app.MainActivity";
 
 	public static final String chromeDriver_PATH_WIN="apk/chromedriver.exe";
 	

@@ -43,7 +43,7 @@ public class LoginPageObjects extends BasePageActions {
 	@iOSFindBy(id = "Allow")
 	public WebElement Allow_notifications;
 
-	@iOSFindBy(accessibility = "buttonSignIn")
+	@iOSFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Login\"])[2]")
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Login']")
 	public WebElement btnNavigateSignIn;
 	
@@ -63,8 +63,8 @@ public class LoginPageObjects extends BasePageActions {
 	@iOSFindBy(accessibility = "buttonSignIn")
 	public WebElement btnNavigateSignIniOS; // NEW SPLASH SCREEN LOGIN BUTTON
 
-	@iOSFindBy(id = "textfieldemailMobileField")
-	 @AndroidFindBy(xpath="//android.widget.EditText")
+	@iOSFindBy(accessibility = "loginEmailInput")
+	 @AndroidFindBy(xpath="//android.widget.EditText[@text='Email Address']")
 	public WebElement editTextUserName;
 
 	@iOSFindBy(id = "textfieldpasswordField")
@@ -177,7 +177,7 @@ public class LoginPageObjects extends BasePageActions {
 	@AndroidFindBy(id = "com.shaadi.android:id/gsignin")
 	public WebElement GoogleSignUpBtn;
 
-
+	@iOSFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Continue\"])[2]")
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Continue']")
     public MobileElement continueButton;
 

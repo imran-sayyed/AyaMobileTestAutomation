@@ -91,9 +91,9 @@ public class BaseTest {
 		} else {
 			RunEnvironment = runenv;
 			if (RunEnvironment.equalsIgnoreCase("androidlocal")) {
-				AppProperties.setProperty(UserProperty.APP_BUILD_PATH, "app-phat-release.apk");
+				AppProperties.setProperty(UserProperty.APP_BUILD_PATH, "application-d2be2714-04f4-448e-8a08-9a3b21091e64.apk");
 			} else {
-				AppProperties.setProperty(UserProperty.APP_BUILD_PATH, "AyaiOSApp.ipa");
+				AppProperties.setProperty(UserProperty.APP_BUILD_PATH, "application-d2be2714-04f4-448e-8a08-9a3b21091e64.apk");
 			}
 		}
 

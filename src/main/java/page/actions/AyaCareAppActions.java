@@ -77,16 +77,19 @@ driver.hideKeyboard();
 	
 }
 
-@iOSFindBy(accessibility = "buttonSignIn")
+@iOSFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Login\"])[2]")
 @AndroidFindBy(xpath="//android.widget.TextView[@text='Login']")
 public WebElement btnNavigateSignIn;
 	
 @AndroidFindBy(xpath="//android.widget.TextView[@text='Forgot Password']")
 public MobileElement forgotPasswordLink;	
 
+
+@iOSFindBy(accessibility = "loginEmailInput")
 @AndroidFindBy(xpath="//android.widget.EditText[@text='Enter your email']")
 public WebElement enterYourEmail;
 
+@iOSFindBy(xpath = "(//XCUIElementTypeOther[@name=\"Continue\"])[2]")
 @AndroidFindBy(xpath="//android.widget.TextView[@text='Continue']")
 public WebElement continuebutton;
 

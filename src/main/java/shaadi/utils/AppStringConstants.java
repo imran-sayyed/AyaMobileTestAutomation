@@ -110,9 +110,9 @@ public class AppStringConstants {
 
 	public static final String NoProfilesMsgShortlistAndroid = "You have no more Matches in this section";
 
-	public static final String ANDROIDAPPACTIVITY = "com.novahsa.MainActivity";
+	public static final String ANDROIDAPPACTIVITY = "com.novahsa.app.MainActivity";
 
-	public static final String ANDROIDAPPPACKAGE = "com.novahsa.phat";
+	public static final String ANDROIDAPPPACKAGE = "com.novahsa.app";
 
 	public static final String googleSignInEmail = "email";
 
